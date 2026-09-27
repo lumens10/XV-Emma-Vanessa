@@ -5466,9 +5466,7 @@ text-transform: uppercase;
             calc(var(--hotels-position-y) + 70px)
         );
 
-    transition:
-        opacity 0.9s ease,
-        transform 1s ease;
+    transition: none;
 }
 
 
