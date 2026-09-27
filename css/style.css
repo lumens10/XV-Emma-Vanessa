@@ -4903,11 +4903,11 @@ text-transform: uppercase;
 }
 
 /* =========================================================
-   WHATSAPP
+   WHATSAPP / CONFIRMACIÓN
 ========================================================= */
 
 .rsvp-section {
- width: 100%;
+    width: 100%;
 
     background:
         linear-gradient(
@@ -4916,268 +4916,45 @@ text-transform: uppercase;
         ),
         url('../images/fondo uva.jpg')
         center center / cover no-repeat;
- 
+
     padding-bottom: var(--rsvp-bottom-padding);
 }
 
 
-.whatsapp-button {
+/* =========================================================
+   BOTÓN WHATSAPP
+========================================================= */
 
+.whatsapp-button {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     margin-top: var(--whatsapp-margin-top);
 
     padding: var(--whatsapp-padding);
-border-radius: 2px;
+
+    border-radius: 2px;
 
     background: var(--whatsapp-bg);
-color: var(--whatsapp-color);
-font-size: min(var(--whatsapp-size), 3vw);
+    color: var(--whatsapp-color);
+
+    font-size: min(var(--whatsapp-size), 3vw);
 
     font-weight: var(--whatsapp-weight);
 
     letter-spacing: var(--whatsapp-letter-spacing);
-text-transform: uppercase;
 
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
+    text-transform: uppercase;
 }
 
 
-.whatsapp-button:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 30px
-        rgba(
-            37,
-            211,
-            102,
-            .25
-        );
-}
-/* =========================================================
-   ANIMACIÓN INDIVIDUAL — RSVP
-========================================================= */
-
-.rsvp-section .section-label,
-.rsvp-section h2,
-.rsvp-section p,
-.rsvp-section .whatsapp-button {
-    opacity: 0;
-
-    transition:
-        opacity var(--rsvp-anim-duration) var(--rsvp-anim-ease),
-        transform var(--rsvp-anim-duration) var(--rsvp-anim-ease);
-
-    transition-delay: 0s;
-}
-
-
-/* ETIQUETA */
-.rsvp-section .section-label {
-    transform:
-        translate(
-            var(--rsvp-label-from-x),
-            var(--rsvp-label-from-y)
-        );
-}
-
-
-/* TÍTULO */
-.rsvp-section h2 {
-    transform:
-        translate(
-            var(--rsvp-title-from-x),
-            var(--rsvp-title-from-y)
-        );
-}
-
-
-/* TEXTO */
-.rsvp-section p {
-    transform:
-        translate(
-            var(--rsvp-text-from-x),
-            var(--rsvp-text-from-y)
-        );
-}
-
-
-/* BOTÓN */
-.rsvp-section .whatsapp-button {
-    transform:
-        translate(
-            var(--rsvp-button-from-x),
-            var(--rsvp-button-from-y)
-        );
-}
-/* =========================================================
-   ANIMACIÓN INDIVIDUAL — FORMULARIO RSVP
-========================================================= */
-
-
-/* =========================================================
-   ESTADO INICIAL
-========================================================= */
-
-.rsvp-form,
-.rsvp-form .rsvp-field,
-.rsvp-form .whatsapp-button {
-
-    opacity: 0;
-
-    transition:
-        opacity var(--rsvp-form-anim-duration)
-        var(--rsvp-anim-ease),
-
-        transform var(--rsvp-form-anim-duration)
-        var(--rsvp-anim-ease);
-
-}
-
-
-/* =========================================================
-   POSICIÓN INICIAL
-========================================================= */
-
-.rsvp-form {
-
-    transform:
-        translateY(
-            var(--rsvp-form-anim-distance)
-        );
-
-}
-
-
-.rsvp-form .rsvp-field {
-
-    transform:
-        translateY(
-            var(--rsvp-form-anim-distance)
-        );
-
-}
-
-/* =========================================================
-   ESTADO FINAL — FORMULARIO RSVP
-========================================================= */
-
-.rsvp-section.animate-content .rsvp-form,
-.rsvp-section.animate-content .rsvp-form .rsvp-field,
-.rsvp-section.animate-content .rsvp-form .whatsapp-button {
-
-    opacity: 1;
-
-    transform:
-        translateY(0);
-
-}
-
-
-/* =========================================================
-   RETRASOS — FORMULARIO RSVP
-========================================================= */
-
-
-/* FORMULARIO */
-
-.rsvp-section.animate-content .rsvp-form {
-
-    transition-delay:
-        var(--rsvp-form-delay);
-
-}
-
-
-/* NOMBRE */
-
-.rsvp-section.animate-content
-.rsvp-form .rsvp-field:nth-child(1) {
-
-    transition-delay:
-        var(--rsvp-name-delay);
-
-}
-
-
-/* RESPUESTA */
-
-.rsvp-section.animate-content
-.rsvp-form .rsvp-field:nth-child(2) {
-
-    transition-delay:
-        var(--rsvp-response-delay);
-
-}
-
-
-/* ACOMPAÑANTES */
-
-.rsvp-section.animate-content
-.rsvp-form .rsvp-field:nth-child(3) {
-
-    transition-delay:
-        var(--rsvp-companions-delay);
-
-}
-
-
-/* BOTÓN */
-
-.rsvp-section.animate-content
-.rsvp-form .whatsapp-button {
-
-    transition-delay:
-        var(--rsvp-button-form-delay);
-
-}
-
-/* =========================================================
-   ESTADO FINAL
-========================================================= */
-
-.rsvp-section.animate-content .section-label,
-.rsvp-section.animate-content h2,
-.rsvp-section.animate-content p,
-.rsvp-section.animate-content .whatsapp-button {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-
-/* =========================================================
-   RETRASOS
-========================================================= */
-
-.rsvp-section.animate-content .section-label {
-    transition-delay: var(--rsvp-label-delay);
-}
-
-.rsvp-section.animate-content h2 {
-    transition-delay: var(--rsvp-title-delay);
-}
-
-.rsvp-section.animate-content p {
-    transition-delay: var(--rsvp-text-delay);
-}
-
-.rsvp-section.animate-content .whatsapp-button {
-    transition-delay: var(--rsvp-button-delay);
-}
 /* =========================================================
    FORMULARIO DE CONFIRMACIÓN
 ========================================================= */
 
 .rsvp-form {
-
     width: 100%;
 
     max-width: 650px;
@@ -5191,52 +4968,42 @@ text-transform: uppercase;
 
     flex-direction: column;
 
-    gap:
-        var(--rsvp-form-gap);
-
+    gap: var(--rsvp-form-gap);
 }
 
 
-/* =========================================
+/* =========================================================
    CADA CAMPO
-========================================= */
+========================================================= */
 
 .rsvp-field {
-
     width: 100%;
 
     display: flex;
 
     flex-direction: column;
 
-    gap:
-        var(--rsvp-field-gap);
-
+    gap: var(--rsvp-field-gap);
 }
 
 
-/* =========================================
+/* =========================================================
    ETIQUETAS
-========================================= */
+========================================================= */
 
 .rsvp-field label,
 .rsvp-label {
+    color: var(--rsvp-label-color);
 
-    color:
-        var(--rsvp-label-color);
-
-    font-size:
-        var(--rsvp-label-size);
-
+    font-size: var(--rsvp-label-size);
 }
 
 
-/* =========================================
+/* =========================================================
    CAMPOS DE TEXTO
-========================================= */
+========================================================= */
 
 .rsvp-field input[type="text"] {
-
     width: 100%;
 
     box-sizing: border-box;
@@ -5249,113 +5016,89 @@ text-transform: uppercase;
         1px solid
         var(--rsvp-input-border-color);
 
-    border-radius:
-        var(--rsvp-input-radius);
+    border-radius: var(--rsvp-input-radius);
 
-    background:
-        var(--rsvp-input-bg);
+    background: var(--rsvp-input-bg);
 
-    color:
-        var(--rsvp-input-color);
+    color: var(--rsvp-input-color);
 
-    font-size:
-        var(--rsvp-input-size);
+    font-size: var(--rsvp-input-size);
 
     outline: none;
-
 }
 
 
-/* =========================================
+/* =========================================================
    PLACEHOLDER
-========================================= */
+========================================================= */
 
 .rsvp-field input::placeholder {
-
-    color:
-        var(--rsvp-placeholder-color);
-
+    color: var(--rsvp-placeholder-color);
 }
 
 
-/* =========================================
+/* =========================================================
    CUANDO SE SELECCIONA EL CAMPO
-========================================= */
+========================================================= */
 
 .rsvp-field input[type="text"]:focus {
-
-    border-color:
-        var(--rsvp-input-focus-color);
-
+    border-color: var(--rsvp-input-focus-color);
 }
 
 
-/* =========================================
+/* =========================================================
    OPCIONES DE RESPUESTA
-========================================= */
+========================================================= */
 
 .rsvp-option {
-
     display: flex;
 
     flex-direction: row !important;
 
     align-items: center;
 
-    gap:
-        var(--rsvp-option-gap);
+    gap: var(--rsvp-option-gap);
 
-    color:
-        var(--rsvp-option-color);
+    color: var(--rsvp-option-color);
 
-    font-size:
-        var(--rsvp-option-size);
+    font-size: var(--rsvp-option-size);
 
     cursor: pointer;
-
 }
 
 
-/* =========================================
+/* =========================================================
    RADIO
-========================================= */
+========================================================= */
 
 .rsvp-option input[type="radio"] {
+    width: var(--rsvp-radio-size);
 
-    width:
-        var(--rsvp-radio-size);
-
-    height:
-        var(--rsvp-radio-size);
+    height: var(--rsvp-radio-size);
 
     margin: 0;
 
     flex-shrink: 0;
-
 }
 
 
-/* =========================================
+/* =========================================================
    ACOMPAÑANTES
-========================================= */
+========================================================= */
 
 .companions-container {
-
     display: flex;
 
     flex-direction: column;
 
-    gap:
-        var(--rsvp-companion-gap);
-
+    gap: var(--rsvp-companion-gap);
 }
 
 /* =========================================================
-   HOTELES — CONTROL DEL BLOQUE
+   HOTELES — BLOQUE
 ========================================================= */
 
 .hotels-section {
-
     width: var(--hotels-width);
 
     padding-left: var(--hotels-padding-x);
@@ -5377,27 +5120,22 @@ text-transform: uppercase;
 ========================================================= */
 
 .hotels-section .section-label {
-
     color: var(--hotels-label-color);
 
-    font-size:
-        var(--hotels-label-size);
+    font-size: var(--hotels-label-size);
 }
 
 
 /* =========================================================
-   TÍTULO / DESCRIPCIÓN
+   DESCRIPCIÓN
 ========================================================= */
 
 .hotels-section p {
-
     color: var(--hotels-description-color);
 
-    font-size:
-        var(--hotels-description-size);
+    font-size: var(--hotels-description-size);
 
-    margin-top:
-        var(--hotels-description-space-top);
+    margin-top: var(--hotels-description-space-top);
 }
 
 
@@ -5406,16 +5144,13 @@ text-transform: uppercase;
 ========================================================= */
 
 .hotel-list {
-
-    margin-top:
-        var(--hotels-list-space-top);
+    margin-top: var(--hotels-list-space-top);
 
     display: flex;
 
     flex-direction: column;
 
-    gap:
-        var(--hotels-gap);
+    gap: var(--hotels-gap);
 }
 
 
@@ -5424,190 +5159,26 @@ text-transform: uppercase;
 ========================================================= */
 
 .hotel-card h3 {
+    color: var(--hotel-name-color);
 
-    color:
-        var(--hotel-name-color);
-
-    font-size:
-        var(--hotel-name-size);
+    font-size: var(--hotel-name-size);
 
     margin: 0;
 }
 
 
 /* =========================================================
-   BOTÓN
+   BOTÓN DE UBICACIÓN
 ========================================================= */
 
 .hotel-card .gold-button {
-
-    margin-top:
-        var(--hotel-button-space-top);
+    margin-top: var(--hotel-button-space-top);
 
     padding:
         var(--hotel-button-padding-y)
         var(--hotel-button-padding-x);
 
-    font-size:
-        var(--hotel-button-font-size);
-}
-
-/* =========================================================
-   HOTELES — ANIMACIÓN DEL BLOQUE
-========================================================= */
-
-.hotels-section {
-
-    opacity: 0;
-
-    transform:
-        translate(
-            var(--hotels-position-x),
-            calc(var(--hotels-position-y) + 70px)
-        );
-
-    transition: none;
-}
-
-
-/* =========================================================
-   BLOQUE CUANDO ENTRA
-========================================================= */
-
-.hotels-section.visible {
-
-    opacity: 1;
-
-    transform:
-        translate(
-            var(--hotels-position-x),
-            var(--hotels-position-y)
-        );
-}
-
-
-/* =========================================================
-   BLOQUE CUANDO SALE
-========================================================= */
-
-.hotels-section.exit-up {
-
-    opacity: 0;
-
-    transform:
-        translate(
-            var(--hotels-position-x),
-            calc(var(--hotels-position-y) - 60px)
-        );
-}
-
-
-.hotels-section.exit-down {
-
-    opacity: 0;
-
-    transform:
-        translate(
-            var(--hotels-position-x),
-            calc(var(--hotels-position-y) + 60px)
-        );
-}
-/* =========================================================
-   HOTELES — ANIMACIÓN DEL CONTENIDO
-========================================================= */
-
-.hotels-section .section-label,
-.hotels-section > p,
-.hotels-section .hotel-card {
-
-    opacity: 0;
-
-    transform: translateY(35px);
-
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-}
-
-
-/* =========================================================
-   CUANDO EL BLOQUE ESTÁ ACTIVO
-========================================================= */
-
-.hotels-section.visible .section-label,
-.hotels-section.visible > p,
-.hotels-section.visible .hotel-card {
-
-    opacity: 1;
-
-    transform: translateY(0);
-}
-
-
-/* =========================================================
-   RETRASOS
-========================================================= */
-
-.hotels-section.visible .section-label {
-    transition-delay: 0.15s;
-}
-
-.hotels-section.visible > p {
-    transition-delay: 0.30s;
-}
-
-.hotels-section.visible .hotel-card:nth-child(1) {
-    transition-delay: 0.50s;
-}
-
-.hotels-section.visible .hotel-card:nth-child(2) {
-    transition-delay: 0.70s;
-}
-/* =========================================================
-   HOTELES — ANIMACIÓN DE BOTONES
-========================================================= */
-
-.hotels-section .hotel-card .gold-button {
-
-    opacity: 0;
-
-    transform: translateY(20px);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
-
-
-/* =========================================================
-   BOTONES CUANDO EL BLOQUE ESTÁ ACTIVO
-========================================================= */
-
-.hotels-section.visible .hotel-card .gold-button {
-
-    opacity: 1;
-
-    transform: translateY(0);
-}
-
-
-/* =========================================================
-   RETRASO DE CADA BOTÓN
-========================================================= */
-
-.hotels-section.visible
-.hotel-card:nth-child(1)
-.gold-button {
-
-    transition-delay: 0.70s;
-}
-
-
-.hotels-section.visible
-.hotel-card:nth-child(2)
-.gold-button {
-
-    transition-delay: 0.90s;
+    font-size: var(--hotel-button-font-size);
 }
 /* =========================================================
    MÚSICA
