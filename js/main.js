@@ -61,9 +61,7 @@ const ceremonyTime = invitation.event.ceremonyTime;
 const receptionTime = invitation.event.receptionTime;
 
 const dressCode = invitation.dressCode;
-   
-const hotels = invitation.hotels;
-   
+
 const whatsappOption1 =
     invitation.rsvp.option1.phone;
 
@@ -194,61 +192,6 @@ if (dressHeading) {
     dressHeading.textContent = dressCode;
 }
 
-/* =====================================================
-   HOTELES
-===================================================== */
-
-const hotelsTitle =
-    document.querySelector("[data-hotels-title]");
-
-if (hotelsTitle) {
-    hotelsTitle.textContent = hotels.title;
-}
-
-
-const hotelsDescription =
-    document.querySelector("[data-hotels-description]");
-
-if (hotelsDescription) {
-    hotelsDescription.textContent =
-        hotels.description;
-}
-
-
-const hotel1Name =
-    document.querySelector("[data-hotel1-name]");
-
-if (hotel1Name) {
-    hotel1Name.textContent =
-        hotels.hotel1.name;
-}
-
-
-const hotel1Map =
-    document.querySelector("[data-hotel1-map]");
-
-if (hotel1Map) {
-    hotel1Map.href =
-        hotels.hotel1.maps;
-}
-
-
-const hotel2Name =
-    document.querySelector("[data-hotel2-name]");
-
-if (hotel2Name) {
-    hotel2Name.textContent =
-        hotels.hotel2.name;
-}
-
-
-const hotel2Map =
-    document.querySelector("[data-hotel2-map]");
-
-if (hotel2Map) {
-    hotel2Map.href =
-        hotels.hotel2.maps;
-}
 
 /* =====================================================
    PANTALLA DE APERTURA
@@ -541,31 +484,7 @@ const urlParams =
     new URLSearchParams(
         window.location.search
     );
-/* =====================================================
-   HOTELES — CONTROL DESDE LA URL
-===================================================== */
 
-const hotelParam =
-    urlParams.get("hotel");
-   /* =====================================================
-   HOTELES — MOSTRAR SEGÚN LA URL
-===================================================== */
-
-const hotelsSection =
-    document.querySelector(
-        ".hotels-section"
-    );
-
-
-if (
-    hotelsSection &&
-    hotelParam !== "1"
-) {
-
-    hotelsSection.style.display =
-        "none";
-
-}
 
 const paseParam =
     Number(
@@ -580,7 +499,7 @@ const paseParam =
 
 const guestCount =
     Number.isInteger(paseParam) &&
-    paseParam >= 1 &&
+    paseParam >= 2 &&
     paseParam <= 6
 
         ? paseParam
@@ -604,212 +523,23 @@ if (passNumber) {
         guestCount;
 
 }
+
 /* =====================================================
-   FORMULARIO — ACOMPAÑANTES
-===================================================== */
-
-const companionsField =
-    document.getElementById(
-        "companionsField"
-    );
-
-
-const companionsContainer =
-    document.getElementById(
-        "companionsContainer"
-    );
-
-
-const attendanceOptions =
-    document.querySelectorAll(
-        'input[name="attendance"]'
-    );
-
-
-/*
-   Al comenzar ocultamos
-   el campo de acompañantes.
-*/
-
-if (companionsField) {
-
-    companionsField.style.display =
-        "none";
-
-}
-
-
-/*
-   Crear los campos
-   de acompañantes.
-*/
-
-function createCompanionFields() {
-
-    if (!companionsContainer) {
-        return;
-    }
-
-
-    /*
-       Limpiar campos anteriores.
-    */
-
-    companionsContainer.innerHTML =
-        "";
-
-
-    /*
-       Si el pase es para una sola
-       persona, no hay acompañantes.
-    */
-
-    if (guestCount <= 1) {
-        return;
-    }
-
-
-    /*
-       El número de acompañantes
-       es el número del pase
-       menos la persona principal.
-    */
-
-    const companionCount =
-        guestCount - 1;
-
-
-    /*
-       Crear cada campo.
-    */
-
-    for (
-        let i = 1;
-        i <= companionCount;
-        i++
-    ) {
-
-        const input =
-            document.createElement(
-                "input"
-            );
-
-
-        input.type =
-            "text";
-
-
-        input.className =
-            "companion-input";
-
-
-        input.placeholder =
-            "Nombre y apellido";
-
-
-        input.id =
-            `companion${i}`;
-
-
-        input.autocomplete =
-            "off";
-
-
-        companionsContainer.appendChild(
-            input
-        );
-
-    }
-
-}
-
-
-/*
-   Vigilar la respuesta
-   del invitado.
-*/
-
-attendanceOptions.forEach(
-    option => {
-
-        option.addEventListener(
-            "change",
-            () => {
-
-                /*
-                   Si NO asistirá:
-                   ocultamos acompañantes.
-                */
-
-                if (
-                    option.value ===
-                    "no" &&
-                    option.checked
-                ) {
-
-                    if (companionsField) {
-
-                        companionsField.style.display =
-                            "none";
-
-                    }
-
-
-                    if (companionsContainer) {
-
-                        companionsContainer.innerHTML =
-                            "";
-
-                    }
-
-                }
-
-
-                /*
-                   Si SÍ asistirá:
-                   mostramos acompañantes
-                   solamente si el pase
-                   permite acompañantes.
-                */
-
-                if (
-                    option.value ===
-                    "yes" &&
-                    option.checked
-                ) {
-
-                    if (
-                        guestCount > 1
-                    ) {
-
-                        createCompanionFields();
-
-
-                        if (companionsField) {
-
-                            companionsField.style.display =
-                                "block";
-
-                        }
-
-                    }
-
-                }
-
-            }
-        );
-
-    }
-);
-/* =====================================================
-   WHATSAPP — CONFIRMACIÓN DEL FORMULARIO
+   WHATSAPP — CONFIRMACIÓN SEGÚN OPCIÓN
 ===================================================== */
 
 if (whatsappButton) {
 
     /*
-       Leer la opción de WhatsApp
-       desde el enlace, si existe.
+       Leer la opción desde el enlace.
+
+       Ejemplos:
+
+       ?pase=2&opcion=1
+       ?pase=3&opcion=1
+
+       ?pase=2&opcion=2
+       ?pase=4&opcion=2
     */
 
     const opcionParam =
@@ -817,8 +547,8 @@ if (whatsappButton) {
 
 
     /*
-       Seleccionar el número
-       correspondiente.
+       Seleccionar automáticamente
+       el número correspondiente.
     */
 
     let whatsappPhone;
@@ -833,6 +563,11 @@ if (whatsappButton) {
 
     } else {
 
+        /*
+           Opción 1 también funciona
+           como opción predeterminada.
+        */
+
         whatsappPhone =
             whatsappOption1;
 
@@ -840,228 +575,29 @@ if (whatsappButton) {
 
 
     /*
-       Cuando la persona pulse
-       el botón de WhatsApp.
+       Preparar mensaje.
     */
 
-    whatsappButton.addEventListener(
-        "click",
-        function (event) {
+    const encodedMessage =
+        encodeURIComponent(
+            whatsappMessage
+        );
 
-            /*
-               Evitar que el botón
-               abra el enlace anterior.
-            */
 
-            event.preventDefault();
+    /*
+       Crear enlace de WhatsApp.
+    */
 
+    whatsappButton.href =
+        `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
 
-            /*
-               Obtener el nombre
-               escrito por el invitado.
-            */
 
-            const guestNameInput =
-                document.getElementById(
-                    "guestName"
-                );
+    whatsappButton.target =
+        "_blank";
 
 
-            const guestName =
-                guestNameInput
-                    ? guestNameInput.value.trim()
-                    : "";
-
-
-            /*
-               Obtener la respuesta.
-            */
-
-            const selectedAttendance =
-                document.querySelector(
-                    'input[name="attendance"]:checked'
-                );
-
-
-            /*
-               Comprobar que escribió
-               su nombre.
-            */
-
-            if (!guestName) {
-
-                alert(
-                    "Por favor, escribe tu nombre."
-                );
-
-                return;
-
-            }
-
-
-            /*
-               Comprobar que eligió
-               una respuesta.
-            */
-
-            if (!selectedAttendance) {
-
-                alert(
-                    "Por favor, selecciona tu respuesta."
-                );
-
-                return;
-
-            }
-
-
-            /*
-               ========================================
-               SI NO ASISTIRÁ
-               ========================================
-            */
-
-            if (
-                selectedAttendance.value ===
-                "no"
-            ) {
-
-                const message =
-                    `Hola soy ${guestName}, lo siento, no podré asistir, mis mejores deseos, pásatela increíble.`;
-
-
-                const encodedMessage =
-                    encodeURIComponent(
-                        message
-                    );
-
-
-                const whatsappUrl =
-                    `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
-
-
-                window.open(
-                    whatsappUrl,
-                    "_blank"
-                );
-
-
-                return;
-
-            }
-
-
-            /*
-               ========================================
-               SI SÍ ASISTIRÁ
-               ========================================
-            */
-
-
-            /*
-               Buscar todos los campos
-               de acompañantes.
-            */
-
-            const companionInputs =
-                document.querySelectorAll(
-                    ".companion-input"
-                );
-
-
-            const companionNames = [];
-
-
-            companionInputs.forEach(
-                input => {
-
-                    const name =
-                        input.value.trim();
-
-
-                    if (name) {
-
-                        companionNames.push(
-                            name
-                        );
-
-                    }
-
-                }
-            );
-
-
-            /*
-               Si el pase permite
-               acompañantes, pedimos
-               que se escriban.
-            */
-
-            /*
-               ========================================
-               CREAR MENSAJE
-               ========================================
-            */
-
-            let message;
-
-
-            /*
-               Pase individual.
-            */
-
-            if (
-                guestCount <= 1
-            ) {
-
-                message =
-                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emma Vanessa.`;
-
-            }
-
-
-            /*
-               Pase con acompañantes.
-            */
-
-            else {
-
-                message =
-                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emma Vanessa, me acompaña(n) ${companionNames.join(", ")}.`;
-
-            }
-
-
-            /*
-               Convertir el mensaje
-               para utilizarlo en WhatsApp.
-            */
-
-            const encodedMessage =
-                encodeURIComponent(
-                    message
-                );
-
-
-            /*
-               Crear el enlace final.
-            */
-
-            const whatsappUrl =
-                `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
-
-
-            /*
-               Abrir WhatsApp.
-            */
-
-            window.open(
-                whatsappUrl,
-                "_blank"
-            );
-
-        }
-    );
+    whatsappButton.rel =
+        "noopener noreferrer";
 
 }
 
