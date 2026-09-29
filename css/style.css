@@ -2134,7 +2134,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/fondo foto uva.jpg")
+        url("../images/fondo uva.jpg")
         var(--count-bg-x) var(--count-bg-y) / cover no-repeat;
 
     padding: var(--count-section-padding);
@@ -3794,7 +3794,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo durasno.jpg')
         center center /
         cover no-repeat;
 
