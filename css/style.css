@@ -70,26 +70,26 @@ móvil: cambia
 --opening-button-border: rgba(140,109,49,.75);
 
 /* ===== HERO ===== /
-/ --- Sección completa --- /
+/ --- Sección completa --- */
 --hero-min-height: 100svh;
 --hero-bg-x: 50%;
 --hero-bg-y: 50%;
 --hero-frame-margin: 18px;
-/ --- Bloque completo --- /
+/*--- Bloque completo --- */
 --hero-content-width: 100%;
 --hero-content-max-width: 900px;
 --hero-content-padding: 40px 25px;
 --hero-content-margin: 0 auto;
 --hero-content-x: 0px;
 --hero-content-y: 0px;
-/ --- Foto / inicial --- /
+/*--- Foto / inicial --- */
 --hero-photo-width: 380px;
 --hero-photo-max-width: 75vw;
 --hero-photo-margin: 0 auto 5px;
 --hero-photo-x: 0px;
 --hero-photo-y: 0px;
 --hero-photo-opacity: 0;
-/ --- Nombre Nohemi --- /
+/*--- Nombre Nohemi --- */
 --hero-title-margin: 22px 0;
 --hero-title-size: clamp(80px,22vw,190px);
 --hero-title-weight: 300;
@@ -99,13 +99,13 @@ móvil: cambia
 --hero-title-font: 'Parisienne', cursive;
 --hero-title-x: 0px;
 --hero-title-y: clamp(70px,16.25svh,130px);
-/ --- MIS XV --- /
+/* --- MIS XV --- */
 --hero-eyebrow-size: 40px;
 --hero-eyebrow-letter-spacing: 3px;
 --hero-eyebrow-color: var(--c-cream);
 --hero-eyebrow-x: 0px;
 --hero-eyebrow-y: clamp(-200px,-20svh,-80px);
-/ --- Frase --- /
+/* --- Frase --- */
 --hero-text-max-width: 420px;
 --hero-text-margin: 25px auto;
 --hero-text-size: clamp(21px,5vw,28px);
@@ -116,7 +116,8 @@ móvil: cambia
 --hero-text-font: 'Cormorant Garamond', serif;
 --hero-text-x: 0px;
 --hero-text-y: clamp(90px,18.75svh,150px);
-/ --- Fecha --- */
+  
+/* --- Fecha --- */
 --hero-date-margin-top: 35px;
 --hero-date-size: 11px;
 --hero-date-letter-spacing: 7px;
@@ -170,7 +171,8 @@ móvil: cambia
 
 /* =========================================================
 ANIMACIÓN INDIVIDUAL — INTRO
-========================================================= /
+========================================================= */
+  
 --intro-anim-duration: 1.8s;
 --intro-anim-ease: cubic-bezier(.16, 1, .3, 1);
 --intro-label-delay: .20s;
@@ -178,7 +180,8 @@ ANIMACIÓN INDIVIDUAL — INTRO
 --intro-ornament-delay: 1.10s;
 --intro-p1-delay: 1.45s;
 --intro-p2-delay: 1.80s;
-/ POSICIÓN INICIAL DE CADA ELEMENTO */
+  
+/* POSICIÓN INICIAL DE CADA ELEMENTO */
 --intro-label-from-x: 0px;
 --intro-label-from-y: -35px;
 --intro-title-from-x: 0px;
@@ -246,14 +249,14 @@ ANIMACIÓN INDIVIDUAL — COUNTDOWN
 --count-seconds-from-x: 40px;
 --count-seconds-from-y: 30px;
 
-/* =================== FECHA ================= /
-/ ===== FONDO ===== /
+/* =================== FECHA ================= */
+/* ===== FONDO ===== */
 --date-bg: #45060e;
-/ ===== ETIQUETA ===== /
-/ RESERVA LA FECHA /
+/* ===== ETIQUETA ===== */
+/* RESERVA LA FECHA */
 --date-label-color: #45060e;
-/ ===== NÚMERO ===== /
-/ 19 /
+/* ===== NÚMERO ===== */
+/* 19 */
 --date-title-margin-top: 25px;
 --date-number-size: clamp(120px, 30vw, 220px);
 --date-number-weight: 300;
@@ -262,64 +265,64 @@ ANIMACIÓN INDIVIDUAL — COUNTDOWN
 --date-number-font: 'Cormorant Garamond', serif;
 --date-number-x: 0px;
 --date-number-y: 0px;
-/ ===== MES ===== /
-/ DICIEMBRE /
+/* ===== MES ===== */
+/* DICIEMBRE */
 --date-month-margin-top: 25px;
 --date-month-size: 15px;
 --date-month-letter-spacing: 7px;
 --date-month-color: #45060e;
 --date-month-font: 'Montserrat', sans-serif;
-/ ===== AÑO ===== /
-/ 2026 /
+/* ===== AÑO ===== */
+/* 2026 */
 --date-year-margin-top: 10px;
 --date-year-size: 32px;
 --date-year-color: #45060e;
 --date-year-font: 'Cormorant Garamond', serif;
-/ ===== DETALLES ===== /
+/* ===== DETALLES ===== */
 --date-details-max-width: 500px;
 --date-details-margin: 60px auto 0;
 --date-details-gap: clamp(18px, 10vw, 60px);
 --date-detail-gap: 8px;
 --date-detail-min-width: min(100px, 28vw);
-/ ===== ETIQUETAS ===== /
-/ CEREMONIA / RECEPCIÓN /
+/* ===== ETIQUETAS ===== */
+/* CEREMONIA / RECEPCIÓN */
 --date-detail-label-size: 9px;
 --date-detail-label-letter-spacing: 3px;
 --date-detail-label-color: #45060e;
 --date-detail-label-font: 'Montserrat', sans-serif;
-/ ===== HORARIOS ===== /
-/ 11:00 AM / 6:00 PM /
+/* ===== HORARIOS ===== */
+/* 11:00 AM / 6:00 PM */
 --date-detail-value-size: 25px;
 --date-detail-value-color: #45060e;
 --date-detail-value-font: 'Cormorant Garamond', serif;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — RESERVA LA FECHA
-========================================================= /
-/ --- Animación general --- /
+========================================================= */
+/* --- Animación general --- */
 --date-anim-duration: 1.8s;
 --date-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ --- Delays --- /
+/* --- Delays --- */
 --date-label-delay: .20s;
 --date-number-delay: .55s;
 --date-month-delay: .90s;
 --date-year-delay: 1.15s;
 --date-details-delay: 1.45s;
-/ =========================================================
+/* =========================================================
 POSICIÓN INICIAL DE CADA ELEMENTO
-========================================================= /
-/ RESERVA LA FECHA /
+========================================================= */
+/* RESERVA LA FECHA */
 --date-label-from-x: 0px;
 --date-label-from-y: -35px;
-/ 19 /
+/* 19 */
 --date-number-from-x: 0px;
 --date-number-from-y: 55px;
-/ DICIEMBRE /
+/* DICIEMBRE */
 --date-month-from-x: -40px;
 --date-month-from-y: 0px;
-/ 2026 /
+/* 2026 */
 --date-year-from-x: 40px;
 --date-year-from-y: 0px;
-/ CEREMONIA / RECEPCIÓN */
+/* CEREMONIA / RECEPCIÓN */
 --date-details-from-x: 0px;
 --date-details-from-y: 45px;
 
@@ -327,21 +330,21 @@ POSICIÓN INICIAL DE CADA ELEMENTO
 
 /* =========================================================
 FAMILIA — PANEL DE CONTROL
-========================================================= /
-/ ===== SECCIÓN / FONDO ===== /
+========================================================= */
+/* ===== SECCIÓN / FONDO ===== */
 --family-bg-x: 50%;
 --family-bg-y: 50%;
-/ =========================================================
+/*=========================================================
 TARJETAS DE FAMILIA
-========================================================= /
+========================================================= */
 --family-card-max-width: 500px;
 --family-card-margin: 40px auto 80px;
 --family-card-padding: 35px 20px;
 --family-card-x: 0px;
 --family-card-y: 0px;
-/ =========================================================
+/* =========================================================
 NOMBRES DE LOS PADRES
-========================================================= /
+========================================================= */
 --family-parents-margin: 12px 0;
 --family-parents-size: 20px;
 --family-parents-weight: 300;
@@ -351,9 +354,9 @@ NOMBRES DE LOS PADRES
 --family-parents-letter-spacing: 0px;
 --family-parents-x: 0px;
 --family-parents-y: 0px;
-/ =========================================================
+/* =========================================================
 NOMBRES DE LOS PADRINOS
-======================================================== /
+======================================================== */
 --family-godparents-margin: 12px 0;
 --family-godparents-size: 20px;
 --family-godparents-weight: 300;
@@ -363,9 +366,9 @@ NOMBRES DE LOS PADRINOS
 --family-godparents-letter-spacing: 0px;
 --family-godparents-x: 0px;
 --family-godparents-y: 0px;
-/ =========================================================
+/* =========================================================
 TÍTULO — MIS PADRES
-========================================================= /
+========================================================= */
 --family-heading-margin: 0 0 25px;
 --family-heading-size: 30px;
 --family-heading-weight: 300;
@@ -375,9 +378,9 @@ TÍTULO — MIS PADRES
 --family-heading-font: 'Parisienne', cursive;
 --family-heading-x: 0px;
 --family-heading-y: 0px;
-/ =========================================================
+/* =========================================================
 SUBTÍTULO — MIS PADRINOS
-========================================================= /
+========================================================= */
 --family-subheading-margin: 45px 0 25px;
 --family-subheading-size: 30px;
 --family-subheading-weight: 300;
@@ -387,61 +390,61 @@ SUBTÍTULO — MIS PADRINOS
 --family-subheading-font: 'Parisienne', cursive;
 --family-subheading-x: 0px;
 --family-subheading-y: 0px;
-/ ========================================================
+/* ========================================================
 ANIMACIÓN INDIVIDUAL — FAMILIA
-========================================================= /
+========================================================= */
 --family-anim-duration: 1.8s;
 --family-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ ===== RETRASOS ===== /
+/* ===== RETRASOS ===== */
 --family-label-delay: .20s;
 --family-heading-delay: .50s;
 --family-parents-delay: .85s;
 --family-subheading-delay: 1.20s;
 --family-godparents-delay: 1.55s;
-/ ===== POSICIÓN INICIAL ===== /
-/ CON LA BENDICIÓN DE /
+/* ===== POSICIÓN INICIAL ===== */
+/* CON LA BENDICIÓN DE */
 --family-label-from-x: 0px;
 --family-label-from-y: -30px;
-/ MIS PADRES /
+/* MIS PADRES */
 --family-heading-from-x: 0px;
 --family-heading-from-y: 35px;
-/ NOMBRES DE PADRES /
+/* NOMBRES DE PADRES */
 --family-parents-from-x: -45px;
 --family-parents-from-y: 0px;
-/ MIS PADRINOS /
+/* MIS PADRINOS */
 --family-subheading-from-x: 0px;
 --family-subheading-from-y: 35px;
-/ NOMBRES DE PADRINOS */
+/* NOMBRES DE PADRINOS */
 --family-godparents-from-x: 45px;
 --family-godparents-from-y: 0px;
 
 
 
-/* ===== EVENTOS — CEREMONIA Y RECEPCIÓN ===== /
+/* ===== EVENTOS — CEREMONIA Y RECEPCIÓN ===== */
 --event-min-height: 80svh;
 --event-frame-margin: 20px;
-/ =========================================================
+/* =========================================================
 FONDOS
-========================================================= /
+========================================================= */
 --ceremony-bg-x: 50%;
 --ceremony-bg-y: 50%;
 --reception-bg-x: 50%;
 --reception-bg-y: 50%;
-/ =========================================================
+/* =========================================================
 CONTENIDO
-========================================================= /
+========================================================= */
 --event-content-max-width: 800px;
 --event-content-padding: 30px 20px;
-/ =========================================================
+/* =========================================================
 PNG DEL EVENTO
-========================================================= /
+========================================================= */
 --event-image-width: 90px;
 --event-image-margin-bottom: 25px;
 --event-image-x: 0px;
 --event-image-y: 0px;
-/ =========================================================
+/* =========================================================
 TÍTULO DEL EVENTO
-========================================================= /
+========================================================= */
 --event-title-margin: 25px 0;
 --event-title-size: clamp(50px, 11vw, 100px);
 --event-title-weight: 300;
@@ -451,9 +454,9 @@ TÍTULO DEL EVENTO
 --event-title-font: 'Cormorant Garamond', serif;
 --event-title-x: 0px;
 --event-title-y: 0px;
-/ =========================================================
+/* =========================================================
 HORA DEL EVENTO
-========================================================= /
+========================================================= */
 --event-time-margin-bottom: 30px;
 --event-time-size: 30px;
 --event-time-weight: 300;
@@ -462,9 +465,9 @@ HORA DEL EVENTO
 --event-time-font: 'Cormorant Garamond', serif;
 --event-time-x: 0px;
 --event-time-y: 0px;
-/ =========================================================
+/* =========================================================
 BOTÓN DORADO
-========================================================= /
+========================================================= */
 --gold-button-padding: 15px 25px;
 --gold-button-size: 9px;
 --gold-button-weight: 500;
@@ -474,10 +477,10 @@ BOTÓN DORADO
 --gold-button-bg: transparent;
 --gold-button-x: 0px;
 --gold-button-y: 0px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — EVENTOS
-========================================================= /
-/ --- ANIMACIÓN DE LOS PNG --- /
+========================================================= */
+/* --- ANIMACIÓN DE LOS PNG --- */
 --ceremony-image-delay: .30s;
 --reception-image-delay: .30s;
 --ceremony-image-from-x: -45px;
@@ -486,17 +489,17 @@ ANIMACIÓN INDIVIDUAL — EVENTOS
 --reception-image-from-y: 0px;
 --event-anim-duration: 1.6s;
 --event-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ --- CEREMONIA --- /
+/* --- CEREMONIA --- */
 --ceremony-label-delay: .15s;
 --ceremony-title-delay: .45s;
 --ceremony-time-delay: .80s;
 --ceremony-button-delay: 1.10s;
-/ --- RECEPCIÓN --- /
+/* --- RECEPCIÓN --- */
 --reception-label-delay: .15s;
 --reception-title-delay: .45s;
 --reception-time-delay: .80s;
 --reception-button-delay: 1.10s;
-/ --- Movimiento inicial CEREMONIA --- /
+/* --- Movimiento inicial CEREMONIA --- */
 --ceremony-label-from-x: 0px;
 --ceremony-label-from-y: -30px;
 --ceremony-title-from-x: 0px;
@@ -505,7 +508,7 @@ ANIMACIÓN INDIVIDUAL — EVENTOS
 --ceremony-time-from-y: 0px;
 --ceremony-button-from-x: 0px;
 --ceremony-button-from-y: 35px;
-/ --- Movimiento inicial RECEPCIÓN --- */
+/* --- Movimiento inicial RECEPCIÓN --- */
 --reception-label-from-x: 0px;
 --reception-label-from-y: -30px;
 --reception-title-from-x: 0px;
@@ -516,8 +519,7 @@ ANIMACIÓN INDIVIDUAL — EVENTOS
 --reception-button-from-y: 35px;
 
 /* ===== GALERÍA ===== */
-
-/* --- Texto superior: MOMENTOS --- /
+/* --- Texto superior: MOMENTOS --- */
 --gallery-label-size: 10px;
 --gallery-label-weight: 400;
 --gallery-label-letter-spacing: 4px;
@@ -526,7 +528,7 @@ ANIMACIÓN INDIVIDUAL — EVENTOS
 --gallery-label-margin: 0 0 15px;
 --gallery-label-x: 0px;
 --gallery-label-y: 0px;
-/ --- Título: Un poco de mí --- /
+/* --- Título: Un poco de mí --- */
 --gallery-title-size: 48px;
 --gallery-title-weight: 400;
 --gallery-title-line-height: 1;
@@ -535,59 +537,59 @@ ANIMACIÓN INDIVIDUAL — EVENTOS
 --gallery-title-margin: 0;
 --gallery-title-x: 0px;
 --gallery-title-y: 0px;
-/ --- Galería --- /
+/* --- Galería --- */
 --gallery-max-width: 1000px;
 --gallery-margin: 50px auto 0;
 --gallery-gap: 8px;
 --gallery-item-min-height: clamp(150px,55vw,220px);
-/ --- Posición general de imágenes --- /
+/* --- Posición general de imágenes --- */
 --gallery-img-x: 50%;
 --gallery-img-y: 50%;
-/ --- Imagen 1 --- /
+/* --- Imagen 1 --- */
 --gallery-img-1-x: 50%;
 --gallery-img-1-y: 50%;
-/ --- Imagen 2 --- /
+/* --- Imagen 2 --- */
 --gallery-img-2-x: 50%;
 --gallery-img-2-y: 50%;
-/ --- Imagen 3 --- /
+/* --- Imagen 3 --- */
 --gallery-img-3-x: 50%;
 --gallery-img-3-y: 50%;
-/ --- Imagen 4 --- /
+/* --- Imagen 4 --- */
 --gallery-img-4-x: 50%;
 --gallery-img-4-y: 50%;
-/ --- Imagen 5 --- /
+/* --- Imagen 5 --- */
 --gallery-img-5-x: 50%;
 --gallery-img-5-y: 50%;
-/ --- Imagen 6 --- /
+/* --- Imagen 6 --- */
 --gallery-img-6-x: 50%;
 --gallery-img-6-y: 50%;
-/ --- Imagen 7 --- /
+/* --- Imagen 7 --- */
 --gallery-img-7-x: 50%;
 --gallery-img-7-y: 50%;
-/ --- Imagen 8 --- /
+/* --- Imagen 8 --- */
 --gallery-img-8-x: 50%;
 --gallery-img-8-y: 50%;
-/ --- Imagen 9 --- /
+/* --- Imagen 9 --- */
 --gallery-img-9-x: 50%;
 --gallery-img-9-y: 50%;
-/ --- Imagen 10 --- /
+/* --- Imagen 10 --- */
 --gallery-img-10-x: 50%;
 --gallery-img-10-y: 50%;
-/ --- Imagen 11 --- /
+/* --- Imagen 11 --- */
 --gallery-img-11-x: 50%;
 --gallery-img-11-y: 50%;
-/ --- Imagen 12 --- /
+/* --- Imagen 12 --- */
 --gallery-img-12-x: 50%;
 --gallery-img-12-y: 50%;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — GALERÍA
-========================================================= /
+========================================================= */
 --gallery-anim-duration: 1.4s;
 --gallery-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ --- TEXTOS --- /
+/* --- TEXTOS --- */
 --gallery-label-delay: .15s;
 --gallery-title-delay: .40s;
-/ --- FOTOS --- /
+/* --- FOTOS --- */
 --gallery-img-1-delay: .60s;
 --gallery-img-2-delay: .72s;
 --gallery-img-3-delay: .84s;
@@ -600,12 +602,12 @@ ANIMACIÓN INDIVIDUAL — GALERÍA
 --gallery-img-10-delay: 1.68s;
 --gallery-img-11-delay: 1.80s;
 --gallery-img-12-delay: 1.92s;
-/ --- MOVIMIENTO INICIAL --- /
+/* --- MOVIMIENTO INICIAL --- */
 --gallery-label-from-x: 0px;
 --gallery-label-from-y: -30px;
 --gallery-title-from-x: 0px;
 --gallery-title-from-y: 35px;
-/ --- MOVIMIENTO DE LAS FOTOS --- */
+/* --- MOVIMIENTO DE LAS FOTOS --- */
 --gallery-img-from-x: 0px;
 --gallery-img-from-y: 45px;
 
@@ -613,7 +615,7 @@ ANIMACIÓN INDIVIDUAL — GALERÍA
 
 /* ===== VESTIMENTA ===== */
 
-/* --- Etiqueta: CÓDIGO DE VESTIMENTA --- /
+/* --- Etiqueta: CÓDIGO DE VESTIMENTA --- */
 --dress-label-color: #45060e;
 --dress-label-font: 'Montserrat', sans-serif;
 --dress-label-size: 10px;
@@ -622,13 +624,13 @@ ANIMACIÓN INDIVIDUAL — GALERÍA
 --dress-label-margin: 0 0 20px;
 --dress-label-x: 0px;
 --dress-label-y: 0px;
-/ --- Icono: ♡ --- /
+/* --- Icono: ♡ --- */
 --dress-icon-margin: 30px 0;
 --dress-icon-size: 70px;
 --dress-icon-color: #45060e;
 --dress-icon-x: 0px;
 --dress-icon-y: 0px;
-/ --- Título: Formal --- /
+/* --- Título: Formal --- */
 --dress-title-color: #45060e;
 --dress-title-font: 'Cormorant Garamond', serif;
 --dress-title-size: clamp(45px,10vw,80px);
@@ -637,7 +639,7 @@ ANIMACIÓN INDIVIDUAL — GALERÍA
 --dress-title-margin: 20px auto 30px;
 --dress-title-x: 0px;
 --dress-title-y: 0px;
-/ --- Texto --- /
+/* --- Texto --- */
 --dress-text-color: #45060e;
 --dress-text-font: 'Montserrat', sans-serif;
 --dress-text-size: 14px;
@@ -647,40 +649,40 @@ ANIMACIÓN INDIVIDUAL — GALERÍA
 --dress-text-margin: 20px auto;
 --dress-text-x: 0px;
 --dress-text-y: 0px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — VESTIMENTA
-========================================================= /
+========================================================= */
 --dress-anim-duration: 1.6s;
 --dress-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ =========================================================
+/* =========================================================
 RETRASOS
-========================================================= /
-/ CÓDIGO DE VESTIMENTA /
+========================================================= */
+/* CÓDIGO DE VESTIMENTA */
 --dress-label-delay: .15s;
-/ PNG /
+/* PNG */
 --dress-icon-delay: .45s;
-/ FORMAL /
+/* FORMAL */
 --dress-title-delay: .80s;
-/ TEXTO /
+/* TEXTO */
 --dress-text-delay: 1.15s;
-/ =========================================================
+/* =========================================================
 POSICIÓN INICIAL DE LA ANIMACIÓN
-========================================================= /
-/ CÓDIGO DE VESTIMENTA /
+========================================================= */
+/* CÓDIGO DE VESTIMENTA */
 --dress-label-from-x: 0px;
 --dress-label-from-y: -30px;
-/ PNG /
+/* PNG */
 --dress-icon-from-x: 0px;
 --dress-icon-from-y: 45px;
-/ FORMAL /
+/* FORMAL */
 --dress-title-from-x: 0px;
 --dress-title-from-y: 40px;
-/ TEXTO */
+/* TEXTO */
 --dress-text-from-x: 0px;
 --dress-text-from-y: 35px;
 
 /* ===== SOBRES ===== /
-/ --- Etiqueta de sección --- /
+/ --- Etiqueta de sección --- */
 --envelope-label-color: #45060e;
 --envelope-label-font: 'Montserrat', sans-serif;
 --envelope-label-size: 10px;
@@ -689,13 +691,13 @@ POSICIÓN INICIAL DE LA ANIMACIÓN
 --envelope-label-margin: 0 0 20px;
 --envelope-label-x: 0px;
 --envelope-label-y: 0px;
-/ --- Icono --- /
+/* --- Icono --- */
 --envelope-icon-margin: 30px 0;
 --envelope-icon-size: 70px;
 --envelope-icon-color: var(--c-gold-light);
 --envelope-icon-x: 0px;
 --envelope-icon-y: 0px;
-/ --- Título --- /
+/* --- Título --- */
 --envelope-title-color: #45060e;
 --envelope-title-font: 'Cormorant Garamond', serif;
 --envelope-title-size: clamp(45px,10vw,80px);
@@ -704,7 +706,7 @@ POSICIÓN INICIAL DE LA ANIMACIÓN
 --envelope-title-margin: 20px auto 30px;
 --envelope-title-x: 0px;
 --envelope-title-y: 0px;
-/ --- Texto --- /
+/* --- Texto --- */
 --envelope-text-color: #45060e;
 --envelope-text-font: 'Montserrat', sans-serif;
 --envelope-text-size: 14px;
@@ -714,34 +716,34 @@ POSICIÓN INICIAL DE LA ANIMACIÓN
 --envelope-text-margin: 20px auto;
 --envelope-text-x: 0px;
 --envelope-text-y: 0px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — SOBRES
-========================================================= /
+========================================================= */
 --envelope-anim-duration: 1.6s;
 --envelope-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ --- RETRASOS --- /
+/* --- RETRASOS --- */
 --envelope-label-delay: .15s;
 --envelope-icon-delay: .45s;
 --envelope-title-delay: .80s;
 --envelope-text-delay: 1.15s;
-/ --- POSICIÓN INICIAL --- /
-/ Etiqueta /
+/* --- POSICIÓN INICIAL --- */
+/* Etiqueta */
 --envelope-label-from-x: 0px;
 --envelope-label-from-y: -30px;
-/ PNG /
+/* PNG */
 --envelope-icon-from-x: 0px;
 --envelope-icon-from-y: 45px;
-/ Título /
+/* Título */
 --envelope-title-from-x: 0px;
 --envelope-title-from-y: 40px;
-/ Texto */
+/* Texto */
 --envelope-text-from-x: 0px;
 --envelope-text-from-y: 35px;
 
 
 
 /* ===== TIMELINE / PROGRAMA ===== /
-/ --- Etiqueta de sección: EL GRAN DÍA --- /
+/ --- Etiqueta de sección: EL GRAN DÍA --- */
 --timeline-section-label-size: 10px;
 --timeline-section-label-weight: 400;
 --timeline-section-label-letter-spacing: 3px;
@@ -750,7 +752,7 @@ ANIMACIÓN INDIVIDUAL — SOBRES
 --timeline-section-label-margin: 0 0 15px;
 --timeline-section-label-x: 0px;
 --timeline-section-label-y: 0px;
-/ --- Título de sección: Programa --- /
+/* --- Título de sección: Programa --- */
 --timeline-section-title-size: 48px;
 --timeline-section-title-weight: 400;
 --timeline-section-title-letter-spacing: 0px;
@@ -760,24 +762,24 @@ ANIMACIÓN INDIVIDUAL — SOBRES
 --timeline-section-title-margin: 0;
 --timeline-section-title-x: 0px;
 --timeline-section-title-y: 0px;
-/ --- Contenedor del Timeline --- /
+/* --- Contenedor del Timeline --- */
 --timeline-max-width: 550px;
 --timeline-margin: 60px auto;
-/ --- Cada evento --- /
+/* --- Cada evento --- */
 --timeline-item-padding: clamp(24px,9vw,35px) clamp(14px,6vw,20px);
 --timeline-item-gap: 8px;
 --timeline-item-x: 0px;
 --timeline-item-y: 0px;
-/ --- Línea central --- /
+/* --- Línea central --- */
 --timeline-line-width: 1px;
 --timeline-line-color: rgba(201,164,92,.5);
 --timeline-line-x: 50%;
-/ --- Punto de cada evento --- /
+/* --- Punto de cada evento --- */
 --timeline-dot-size: 7px;
 --timeline-dot-color: var(--gold);
 --timeline-dot-x: 50%;
 --timeline-dot-y: 0px;
-/ --- Hora / etiqueta de cada evento --- /
+/* --- Hora / etiqueta de cada evento --- */
 --timeline-label-size: 10px;
 --timeline-label-weight: 400;
 --timeline-label-letter-spacing: 3px;
@@ -786,7 +788,7 @@ ANIMACIÓN INDIVIDUAL — SOBRES
 --timeline-label-margin: 0;
 --timeline-label-x: 0px;
 --timeline-label-y: 0px;
-/ --- Nombre del evento --- /
+/* --- Nombre del evento --- */
 --timeline-title-size: 30px;
 --timeline-title-weight: 400;
 --timeline-title-color: #45060e;
@@ -796,15 +798,15 @@ ANIMACIÓN INDIVIDUAL — SOBRES
 --timeline-title-margin: 0;
 --timeline-title-x: 0px;
 --timeline-title-y: 0px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — TIMELINE / PROGRAMA
-========================================================= /
+========================================================= */
 --timeline-anim-duration: 1.4s;
 --timeline-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ --- TEXTOS DE LA SECCIÓN --- /
+/* --- TEXTOS DE LA SECCIÓN --- */
 --timeline-section-label-delay: .15s;
 --timeline-section-title-delay: .40s;
-/ --- EVENTOS --- /
+/* --- EVENTOS --- */
 --timeline-item-1-delay: .70s;
 --timeline-item-2-delay: .95s;
 --timeline-item-3-delay: 1.20s;
@@ -813,14 +815,14 @@ ANIMACIÓN INDIVIDUAL — TIMELINE / PROGRAMA
 --timeline-item-6-delay: 1.95s;
 --timeline-item-7-delay: 2.20s;
 --timeline-item-8-delay: 2.45s;
-/ --- MOVIMIENTO INICIAL --- /
-/ Etiqueta /
+/* --- MOVIMIENTO INICIAL --- */
+/* Etiqueta */
 --timeline-section-label-from-x: 0px;
 --timeline-section-label-from-y: -30px;
-/ Título /
+/* Título */
 --timeline-section-title-from-x: 0px;
 --timeline-section-title-from-y: 35px;
-/ Eventos */
+/* Eventos */
 --timeline-item-from-x: 0px;
 --timeline-item-from-y: 45px;
 
@@ -855,41 +857,41 @@ ANIMACIÓN INDIVIDUAL — TIMELINE / PROGRAMA
 
 /* =========================================================
 ANIMACIÓN INDIVIDUAL — PASE DE INVITACIÓN
-========================================================= /
+========================================================= */
 --pass-anim-duration: 1.5s;
 --pass-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ --- RETRASOS --- /
+/* --- RETRASOS --- */
 --pass-label-delay: .15s;
 --pass-title-delay: .40s;
 --pass-name-delay: .65s;
 --pass-line-delay: .90s;
 --pass-text-delay: 1.10s;
 --pass-number-delay: 1.30s;
-/ =========================================================
+/* =========================================================
 MOVIMIENTO INICIAL DE CADA ELEMENTO
 ========================================================= /
-/ Etiqueta — PASE DE INVITACIÓN /
+/ Etiqueta — PASE DE INVITACIÓN */
 --pass-label-from-x: 0px;
 --pass-label-from-y: -30px;
-/ Título — Mis XV /
+/* Título — Mis XV */
 --pass-title-from-x: 0px;
 --pass-title-from-y: 35px;
-/ Nombre — Nohemi /
+/* Nombre — Nohemi */
 --pass-name-from-x: 0px;
 --pass-name-from-y: 35px;
-/ Línea /
+/* Línea */
 --pass-line-from-x: 0px;
 --pass-line-from-y: 20px;
-/ Texto — Pase para /
+/* Texto — Pase para */
 --pass-text-from-x: 0px;
 --pass-text-from-y: 25px;
-/ Número */
+/* Número */
 --pass-number-from-x: 0px;
 --pass-number-from-y: 40px;
 
-/* ===== RSVP ===== /
+/* ===== RSVP ===== */
 --rsvp-bottom-padding: 130px;
-/ BOTÓN WHATSAPP /
+/* BOTÓN WHATSAPP */
 --whatsapp-margin-top: 25px;
 --whatsapp-padding: 17px 30px;
 --whatsapp-size: 10px;
@@ -899,40 +901,40 @@ MOVIMIENTO INICIAL DE CADA ELEMENTO
 --whatsapp-bg: #25d366;
 --whatsapp-x: 0px;
 --whatsapp-y: 0px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — RSVP
-========================================================= /
+========================================================= */
 --rsvp-anim-duration: 1.5s;
 --rsvp-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ RETRASOS /
+/* RETRASOS */
 --rsvp-label-delay: .15s;
 --rsvp-title-delay: .45s;
 --rsvp-text-delay: .75s;
 --rsvp-button-delay: 1.10s;
-/ MOVIMIENTO INICIAL — ETIQUETA /
+/* MOVIMIENTO INICIAL — ETIQUETA */
 --rsvp-label-from-x: 0px;
 --rsvp-label-from-y: -30px;
-/ MOVIMIENTO INICIAL — TÍTULO /
+/* MOVIMIENTO INICIAL — TÍTULO */
 --rsvp-title-from-x: 0px;
 --rsvp-title-from-y: 35px;
-/ MOVIMIENTO INICIAL — TEXTO /
+/* MOVIMIENTO INICIAL — TEXTO */
 --rsvp-text-from-x: 0px;
 --rsvp-text-from-y: 30px;
-/ MOVIMIENTO INICIAL — BOTÓN /
+/* MOVIMIENTO INICIAL — BOTÓN */
 --rsvp-button-from-x: 0px;
 --rsvp-button-from-y: 45px;
-/ =========================================================
+/* =========================================================
 FORMULARIO DE CONFIRMACIÓN
-========================================================= /
-/ ESPACIOS /
+========================================================= */
+/* ESPACIOS */
 --rsvp-form-space-top: 35px;
 --rsvp-form-gap: 28px;
 --rsvp-field-gap: 10px;
-/ TAMAÑOS /
+/* TAMAÑOS */
 --rsvp-label-size: 18px;
 --rsvp-input-size: 16px;
 --rsvp-option-size: 16px;
-/ COLORES /
+/* COLORES */
 --rsvp-label-color: #f7f2e9;
 --rsvp-input-bg: rgba(255, 255, 255, .95);
 --rsvp-input-color: #2b241c;
@@ -940,23 +942,23 @@ FORMULARIO DE CONFIRMACIÓN
 --rsvp-option-color: #f7f2e9;
 --rsvp-input-border-color: rgba(201, 164, 92, .45);
 --rsvp-input-focus-color: #c9a45c;
-/ CAMPOS /
+/* CAMPOS */
 --rsvp-input-padding-y: 14px;
 --rsvp-input-padding-x: 16px;
 --rsvp-input-radius: 4px;
-/ OPCIONES /
+/* OPCIONES */
 --rsvp-option-gap: 10px;
 --rsvp-radio-size: 18px;
-/ ACOMPAÑANTES /
+/* ACOMPAÑANTES */
 --rsvp-companion-gap: 12px;
-/ BOTÓN /
+/* BOTÓN */
 --rsvp-button-space-top: 10px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN DEL FORMULARIO RSVP
-========================================================= /
+========================================================= */
 --rsvp-form-anim-distance: 30px;
 --rsvp-form-anim-duration: 0.9s;
-/ RETRASOS */
+/* RETRASOS */
 --rsvp-form-delay: 0.45s;
 --rsvp-name-delay: 0.55s;
 --rsvp-response-delay: 0.75s;
@@ -966,36 +968,36 @@ ANIMACIÓN DEL FORMULARIO RSVP
 /* =========================================================
 HOTELES
 ========================================================= /
-/ ESPACIO DEL BLOQUE /
+/ ESPACIO DEL BLOQUE */
 --hotels-space-top: 80px;
 --hotels-space-bottom: 100px;
-/ POSICIÓN DEL BLOQUE /
+/* POSICIÓN DEL BLOQUE */
 --hotels-position-x: 0px;
 --hotels-position-y: 0px;
-/ ANCHO Y ESPACIO LATERAL /
+/* ANCHO Y ESPACIO LATERAL */
 --hotels-width: 100%;
 --hotels-padding-x: 20px;
-/ TIPOGRAFÍA /
+/* TIPOGRAFÍA */
 --hotels-label-size: 12px;
 --hotels-title-size: 42px;
 --hotels-description-size: 16px;
 --hotel-name-size: 24px;
-/ COLORES /
+/* COLORES */
 --hotels-label-color: #c9a45c;
 --hotels-title-color: #f7f2e9;
 --hotels-description-color: rgba(247, 242, 233, .75);
 --hotel-name-color: #f7f2e9;
-/ ESPACIOS INTERNOS /
+/* ESPACIOS INTERNOS */
 --hotels-title-space-top: 20px;
 --hotels-description-space-top: 15px;
 --hotels-list-space-top: 45px;
 --hotels-gap: 40px;
 --hotel-button-space-top: 20px;
-/ BOTONES /
+/* BOTONES */
 --hotel-button-padding-y: 12px;
 --hotel-button-padding-x: 25px;
 --hotel-button-font-size: 13px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN DE HOTEL
 ========================================================= */
 --hotels-animation-distance: 35px;
@@ -1023,101 +1025,101 @@ FOOTER — PANEL DE CONTROL
 / =========================================================
 FONDO
 ========================================================= /
-/ Imagen de fondo /
+/ Imagen de fondo */
 --footer-bg-image: url('../images/fondo uva.jpg');
-/ Posición de la imagen de fondo /
+/* Posición de la imagen de fondo */
 --footer-bg-x: 50%;
 --footer-bg-y: 50%;
-/ Tamaño de la imagen de fondo /
+/* Tamaño de la imagen de fondo */
 --footer-bg-size: cover;
-/ Altura mínima del bloque /
+/* Altura mínima del bloque */
 --footer-min-height: 100svh;
-/ =========================================================
+/* =========================================================
 ESPACIADO / TAMAÑO DEL BLOQUE
-========================================================= /
+========================================================= */
 --footer-padding-top: 70px;
 --footer-padding-right: 30px;
 --footer-padding-bottom: 70px;
 --footer-padding-left: 30px;
-/ =========================================================
+/* =========================================================
 ORNAMENTO PNG
 ========================================================= /
-/ Tamaño /
+/ Tamaño */
 --footer-ornament-width: 150px;
-/ Posición /
+/* Posición */
 --footer-ornament-x: 0px;
 --footer-ornament-y: 330px;
-/ Espacio inferior /
+/* Espacio inferior */
 --footer-ornament-margin-bottom: 0px;
-/ =========================================================
+/* =========================================================
 TÍTULO — NOHEMI
 ========================================================= /
-/ Tamaño /
+/ Tamaño */
 --footer-title-size: 80px;
-/ Grosor /
+/* Grosor */
 --footer-title-weight: 300;
-/ Color /
+/* Color */
 --footer-title-color: var(--c-cream);
-/ Fuente /
+/* Fuente */
 --footer-title-font: 'Parisienne', cursive;
-/ Posición /
+/* Posición */
 --footer-title-x: 0px;
 --footer-title-y: 330px;
-/ Espaciado /
+/* Espaciado */
 --footer-title-margin-top: 0px;
 --footer-title-margin-bottom: 0px;
-/ =========================================================
+/* =========================================================
 TEXTO — MIS XV · 2026
 ========================================================= /
-/ Tamaño /
+/ Tamaño */
 --footer-text-size: 10px;
-/ Grosor /
+/* Grosor */
 --footer-text-weight: 300;
-/ Espaciado entre letras /
+/* Espaciado entre letras */
 --footer-text-letter-spacing: 3px;
-/ Color /
+/* Color */
 --footer-text-color: var(--c-gold-light);
-/ Fuente /
+/* Fuente */
 --footer-text-font: 'Montserrat', sans-serif;
-/ Espaciado /
+/* Espaciado */
 --footer-text-margin-top: 15px;
 --footer-text-margin-bottom: 15px;
-/ Posición /
+/* Posición */
 --footer-text-x: 0px;
 --footer-text-y: 330px;
-/ =========================================================
+/* =========================================================
 FIRMA — CON AMOR
-========================================================= /
+========================================================= */
 --footer-signature-size: 26px;
 --footer-signature-weight: 400;
 --footer-signature-letter-spacing: 0px;
 --footer-signature-color: rgba(247,242,233,.5);
 --footer-signature-font: 'Cormorant Garamond', serif;
-/ Posición /
+/* Posición */
 --footer-signature-x: 0px;
 --footer-signature-y: 0px;
-/ Espacio superior /
+/* Espacio superior */
 --footer-signature-margin-top: 0px;
-/ =========================================================
+/* =========================================================
 ANIMACIÓN — FOOTER
-========================================================= /
+========================================================= */
 --footer-anim-duration: 1.6s;
 --footer-anim-ease: cubic-bezier(.16, 1, .3, 1);
-/ Retrasos /
+/* Retrasos */
 --footer-ornament-delay: .15s;
 --footer-title-delay: .50s;
 --footer-text-delay: .85s;
 --footer-signature-delay: 1.15s;
-/ Movimiento inicial — PNG /
+/* Movimiento inicial — PNG */
 --footer-ornament-from-x: 0px;
 --footer-ornament-from-y: 45px;
-/ Movimiento inicial — TÍTULO /
+/* Movimiento inicial — TÍTULO */
 --footer-title-from-x: 0px;
 --footer-title-from-y: 40px;
-/ Movimiento inicial — TEXTO /
+/* Movimiento inicial — TEXTO */
 --footer-text-from-x: 0px;
 --footer-text-from-y: 30px;
-/ Movimiento inicial — FIRMA */
+/* Movimiento inicial — FIRMA */
 --footer-signature-from-x: 0px;
 --footer-signature-from-y: 25px;
 
