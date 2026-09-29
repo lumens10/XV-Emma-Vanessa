@@ -1004,7 +1004,7 @@ if (whatsappButton) {
             ) {
 
                 message =
-                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emma Vanessa.`;
+                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emmita.`;
 
             }
 
@@ -1016,7 +1016,7 @@ if (whatsappButton) {
             else {
 
                 message =
-                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emma Vanessa, me acompaña(n) ${companionNames.join(", ")}.`;
+                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emmita, me acompaña ${companionNames.join(", ")}.`;
 
             }
 
