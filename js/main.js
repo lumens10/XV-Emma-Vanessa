@@ -963,27 +963,6 @@ if (whatsappButton) {
 
 
             /*
-               Si el pase permite
-               acompañantes, pedimos
-               que se escriban.
-            */
-
-            if (
-                guestCount > 1 &&
-                companionNames.length <
-                    guestCount - 1
-            ) {
-
-                alert(
-                    "Por favor, escribe el nombre de todos tus acompañantes."
-                );
-
-                return;
-
-            }
-
-
-            /*
                ========================================
                CREAR MENSAJE
                ========================================
