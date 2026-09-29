@@ -4972,7 +4972,7 @@ var(--rsvp-text-from-y)
 );
 }
 
-/* BOTÓN /
+/* BOTÓN */
 .rsvp-section .whatsapp-button {
 transform:
 translate(
@@ -4980,7 +4980,7 @@ var(--rsvp-button-from-x),
 var(--rsvp-button-from-y)
 );
 }
-/ =========================================================
+/* =========================================================
 ANIMACIÓN INDIVIDUAL — FORMULARIO RSVP
 ========================================================= */
 
@@ -5948,7 +5948,7 @@ transition-delay:
     var(--footer-signature-delay);
 
 }
-
+/*========================================================= 
 Animación general para las secciones después del Hero.
 El efecto .reveal controla la entrada/salida de la sección.
 
@@ -6070,7 +6070,7 @@ transform:
 
 }
 
-IMPORTANTE:
+/* IMPORTANTE:
 Ya no usamos .visible aquí.
 La animación comienza únicamente cuando JS agrega
 la clase .animate-content.
@@ -6682,11 +6682,11 @@ color: var(--envelope-text-color);
 translate: var(--envelope-text-x) var(--envelope-text-y);
 }
 
-/* ===== INTRO: CONTROLES INDIVIDUALES ===== /
+/* ===== INTRO: CONTROLES INDIVIDUALES ===== */
 .intro h2 { margin: var(--intro-title-margin); font-family: var(--intro-title-font); font-size: var(--intro-title-size); font-weight: var(--intro-title-weight); line-height: var(--intro-title-line-height); letter-spacing: var(--intro-title-letter-spacing); color: var(--intro-title-color); translate: var(--intro-title-x) var(--intro-title-y); }
 .intro p(1) { margin: var(--intro-p1-margin); font-family: var(--intro-p1-font); font-size: var(--intro-p1-size); font-weight: var(--intro-p1-weight); line-height: var(--intro-p1-line-height); letter-spacing: var(--intro-p1-letter-spacing); color: var(--intro-p1-color); translate: var(--intro-p1-x) var(--intro-p1-y); }
 .intro p(2) { margin: var(--intro-p2-margin); font-family: var(--intro-p2-font); font-size: var(--intro-p2-size); font-weight: var(--intro-p2-weight); line-height: var(--intro-p2-line-height); letter-spacing: var(--intro-p2-letter-spacing); color: var(--intro-p2-color); translate: var(--intro-p2-x) var(--intro-p2-y); }
-/ =========================================================
+/* =========================================================
 GALERÍA — POSICIÓN INDIVIDUAL DE CADA FOTO
 ========================================================= */
 .gallery-item(1) img { object-position: var(--gallery-img-1-x) var(--gallery-img-1-y); }
@@ -6702,7 +6702,7 @@ GALERÍA — POSICIÓN INDIVIDUAL DE CADA FOTO
 .gallery-item(11) img { object-position: var(--gallery-img-11-x) var(--gallery-img-11-y); }
 .gallery-item(12) img { object-position: var(--gallery-img-12-x) var(--gallery-img-12-y); }
 
-Se usa la propiedad translate para NO pelearse con las
+/* Se usa la propiedad translate para NO pelearse con las
 animaciones existentes del sitio.
 ========================================================= */
 .opening-logo { translate: var(--opening-logo-x) var(--opening-logo-y); }
@@ -6729,7 +6729,7 @@ animaciones existentes del sitio.
 .whatsapp-button { translate: var(--whatsapp-x) var(--whatsapp-y); }
 .music-button { translate: var(--music-x) var(--music-y); }
 
-NO cambia el diseño. Solo evita que un elemento pueda
+/* NO cambia el diseño. Solo evita que un elemento pueda
 ser más ancho que el espacio disponible en el viewport.
 Los valores editables siguen estando únicamente en .
 ========================================================= */
