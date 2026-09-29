@@ -937,6 +937,40 @@
     --music-y: 0px;
 
  
+ /* =========================================================
+   HOTELES
+========================================================= */
+/* ESPACIO DEL BLOQUE */
+--hotels-space-top: 80px;
+--hotels-space-bottom: 100px;
+/* POSICIÓN DEL BLOQUE */
+--hotels-position-x: 0px;
+--hotels-position-y: 0px;
+/* ANCHO Y ESPACIO LATERAL */
+--hotels-width: 100%;
+--hotels-padding-x: 20px;
+/* TIPOGRAFÍA */
+--hotels-label-size: 12px;
+--hotels-title-size: 42px;
+--hotels-description-size: 16px;
+--hotel-name-size: 24px;
+/* COLORES */
+--hotels-label-color: #c9a45c;
+--hotels-title-color: #f7f2e9;
+--hotels-description-color: rgba(247, 242, 233, .75);
+--hotel-name-color: #f7f2e9;
+/* ESPACIOS INTERNOS */
+--hotels-title-space-top: 20px;
+--hotels-description-space-top: 15px;
+--hotels-list-space-top: 45px;
+--hotels-gap: 40px;
+--hotel-button-space-top: 20px;
+/* BOTONES */
+--hotel-button-padding-y: 12px;
+--hotel-button-padding-x: 25px;
+--hotel-button-font-size: 13px;
+
+ 
 /* =========================================================
    FOOTER — PANEL DE CONTROL
 ========================================================= */
@@ -4788,7 +4822,7 @@ text-transform: uppercase;
 }
 
 
-/* 3 — NOHEMI */
+/* 3 — Emma Vanessa */
 
 .pass-section.animate-content .pass-card .pass-name {
     transition-delay:
@@ -5052,7 +5086,169 @@ cursor: pointer;
             );
     }
 }
+/* =========================================================
+   HOTELES — CONTROL DEL BLOQUE
+========================================================= */
 
+.hotels-section {
+
+    width: var(--hotels-width);
+
+    padding-left: var(--hotels-padding-x);
+    padding-right: var(--hotels-padding-x);
+
+    margin-top: var(--hotels-space-top);
+    margin-bottom: var(--hotels-space-bottom);
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            var(--hotels-position-y)
+        );
+}
+
+
+/* =========================================================
+   ETIQUETA
+========================================================= */
+
+.hotels-section .section-label {
+
+    color: var(--hotels-label-color);
+
+    font-size:
+        var(--hotels-label-size);
+}
+
+
+/* =========================================================
+   TÍTULO / DESCRIPCIÓN
+========================================================= */
+
+.hotels-section p {
+
+    color: var(--hotels-description-color);
+
+    font-size:
+        var(--hotels-description-size);
+
+    margin-top:
+        var(--hotels-description-space-top);
+}
+
+
+/* =========================================================
+   LISTA DE HOTELES
+========================================================= */
+
+.hotel-list {
+
+    margin-top:
+        var(--hotels-list-space-top);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--hotels-gap);
+}
+
+
+/* =========================================================
+   NOMBRE DEL HOTEL
+========================================================= */
+
+.hotel-card h3 {
+
+    color:
+        var(--hotel-name-color);
+
+    font-size:
+        var(--hotel-name-size);
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   BOTÓN
+========================================================= */
+
+.hotel-card .gold-button {
+
+    margin-top:
+        var(--hotel-button-space-top);
+
+    padding:
+        var(--hotel-button-padding-y)
+        var(--hotel-button-padding-x);
+
+    font-size:
+        var(--hotel-button-font-size);
+}
+/* =========================================================
+   HOTELES — ANIMACIÓN DEL BLOQUE
+========================================================= */
+
+.hotels-section {
+
+    opacity: 0;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            calc(var(--hotels-position-y) + 70px)
+        );
+
+    transition:
+        opacity 0.9s ease,
+        transform 1s ease;
+}
+
+
+/* =========================================================
+   BLOQUE CUANDO ENTRA
+========================================================= */
+
+.hotels-section.visible {
+
+    opacity: 1;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            var(--hotels-position-y)
+        );
+}
+
+
+/* =========================================================
+   BLOQUE CUANDO SALE
+========================================================= */
+
+.hotels-section.exit-up {
+
+    opacity: 0;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            calc(var(--hotels-position-y) - 60px)
+        );
+}
+
+
+.hotels-section.exit-down {
+
+    opacity: 0;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            calc(var(--hotels-position-y) + 60px)
+        );
+}
 /* =========================================================
    FOOTER
 ========================================================= */
