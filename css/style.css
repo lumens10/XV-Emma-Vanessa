@@ -923,7 +923,36 @@
 /* MOVIMIENTO INICIAL — BOTÓN */
 --rsvp-button-from-x: 0px;
 --rsvp-button-from-y: 45px;
-
+/* =========================================================
+   FORMULARIO DE CONFIRMACIÓN
+========================================================= */
+/* ESPACIOS */
+--rsvp-form-space-top: 35px;
+--rsvp-form-gap: 28px;
+--rsvp-field-gap: 10px;
+/* TAMAÑOS */
+--rsvp-label-size: 18px;
+--rsvp-input-size: 16px;
+--rsvp-option-size: 16px;
+/* COLORES */
+--rsvp-label-color: #f7f2e9;
+--rsvp-input-bg: rgba(255, 255, 255, .95);
+--rsvp-input-color: #2b241c;
+--rsvp-placeholder-color: rgba(80, 70, 60, .45);
+--rsvp-option-color: #f7f2e9;
+--rsvp-input-border-color: rgba(201, 164, 92, .45);
+--rsvp-input-focus-color: #c9a45c;
+/* CAMPOS */
+--rsvp-input-padding-y: 14px;
+--rsvp-input-padding-x: 16px;
+--rsvp-input-radius: 4px;
+/* OPCIONES */
+--rsvp-option-gap: 10px;
+--rsvp-radio-size: 18px;
+/* ACOMPAÑANTES */
+--rsvp-companion-gap: 12px;
+/* BOTÓN */
+--rsvp-button-space-top: 10px;
 
  
     /* ===== MÚSICA ===== */
@@ -4861,6 +4890,184 @@ text-transform: uppercase;
 .pass-section.animate-content .pass-card .pass-number {
     transition-delay:
         var(--pass-number-delay);
+}
+
+/* =========================================================
+   FORMULARIO DE CONFIRMACIÓN
+========================================================= */
+
+.rsvp-form {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin:
+        var(--rsvp-form-space-top)
+        auto
+        0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--rsvp-form-gap);
+
+}
+
+
+/* =========================================
+   CADA CAMPO
+========================================= */
+
+.rsvp-field {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--rsvp-field-gap);
+
+}
+
+
+/* =========================================
+   ETIQUETAS
+========================================= */
+
+.rsvp-field label,
+.rsvp-label {
+
+    color:
+        var(--rsvp-label-color);
+
+    font-size:
+        var(--rsvp-label-size);
+
+}
+
+
+/* =========================================
+   CAMPOS DE TEXTO
+========================================= */
+
+.rsvp-field input[type="text"] {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding:
+        var(--rsvp-input-padding-y)
+        var(--rsvp-input-padding-x);
+
+    border:
+        1px solid
+        var(--rsvp-input-border-color);
+
+    border-radius:
+        var(--rsvp-input-radius);
+
+    background:
+        var(--rsvp-input-bg);
+
+    color:
+        var(--rsvp-input-color);
+
+    font-size:
+        var(--rsvp-input-size);
+
+    outline: none;
+
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.rsvp-field input::placeholder {
+
+    color:
+        var(--rsvp-placeholder-color);
+
+}
+
+
+/* =========================================
+   CUANDO SE SELECCIONA EL CAMPO
+========================================= */
+
+.rsvp-field input[type="text"]:focus {
+
+    border-color:
+        var(--rsvp-input-focus-color);
+
+}
+
+
+/* =========================================
+   OPCIONES DE RESPUESTA
+========================================= */
+
+.rsvp-option {
+
+    display: flex;
+
+    flex-direction: row !important;
+
+    align-items: center;
+
+    gap:
+        var(--rsvp-option-gap);
+
+    color:
+        var(--rsvp-option-color);
+
+    font-size:
+        var(--rsvp-option-size);
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   RADIO
+========================================= */
+
+.rsvp-option input[type="radio"] {
+
+    width:
+        var(--rsvp-radio-size);
+
+    height:
+        var(--rsvp-radio-size);
+
+    margin: 0;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================
+   ACOMPAÑANTES
+========================================= */
+
+.companions-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--rsvp-companion-gap);
+
 }
 
 /* =========================================================
