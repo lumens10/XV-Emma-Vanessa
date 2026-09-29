@@ -12,8 +12,8 @@ const invitation = {
     },
 
     family: {
-        father: "Emerson Jonguitud Hernandez",
-        mother: "Perla Yeyectzy Acosta Martinez",
+        father: "Emerzon Jonguitud Hernández",
+        mother: "Perla Yeyectzy Acosta Martínez",
         godfather: "Mauricio Aldair Ramírez Luis",
         godmother: "Cohinda Rodríguez Rojas"
     },
@@ -63,7 +63,7 @@ const invitation = {
     },
 
     option2: {
-        phone: "5620701794"
+        phone: "7898934103"
     },
 
 
