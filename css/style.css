@@ -90,7 +90,7 @@
 --hero-photo-x: 0px;
 --hero-photo-y: 0px;
 --hero-photo-opacity: 0;
-/* --- Nombre Nohemi --- */
+/* --- Nombre Emma Vanessa --- */
 --hero-title-margin: 22px 0;
 --hero-title-size: clamp(80px,22vw,190px);
 --hero-title-weight: 300;
@@ -944,7 +944,7 @@
    FONDO
 ========================================================= */
 /* Imagen de fondo */
---footer-bg-image: url('../images/fondo foto brazo.jpg');
+--footer-bg-image: url('../images/fondo uva.jpg');
 /* Posición de la imagen de fondo */
 --footer-bg-x: 50%;
 --footer-bg-y: 50%;
@@ -1187,7 +1187,7 @@ button {
             rgba(40, 15, 18, 0.18),
             rgba(40, 15, 18, 0.18)
         ),
-        url('../images/fondo apertura.jpg');
+        url('../images/uva cuadro.jpg');
 
     background-position: var(--opening-bg-x) var(--opening-bg-y);
 background-size: cover;
@@ -1562,7 +1562,7 @@ text-transform: uppercase;
             rgba(10, 8, 5, 0),
             rgba(10, 8, 5, 0)
         ),
-        url('../images/fondo foto.jpg')
+        url('../images/fondo uva.jpg')
         var(--hero-bg-x)
         var(--hero-bg-y) /
         cover no-repeat;
@@ -1759,7 +1759,7 @@ text-transform: uppercase;
 
 
 /* =========================================================
-   NOMBRE — NOHEMI
+   NOMBRE — Emma Vanessa
 ========================================================= */
 
 .hero h1 {
@@ -1792,7 +1792,7 @@ text-transform: uppercase;
 
 
 /* =========================================================
-   ANIMACIÓN — NOHEMI
+   ANIMACIÓN — Emma Vanessa
 ========================================================= */
 
 #invitation.is-visible .hero h1 {
@@ -2021,7 +2021,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/Fondo beige github.jpg")
+        url("../images/fondo durasno.jpg")
         center center / cover no-repeat;
 }
 
@@ -2050,7 +2050,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/fondo foto acostada.jpg")
+        url("../images/fondo foto uva.jpg")
         var(--count-bg-x) var(--count-bg-y) / cover no-repeat;
 
     padding: var(--count-section-padding);
@@ -2178,7 +2178,7 @@ flex-shrink: 0;
     padding: var(--section-padding);
 
     background:
-        url("../images/Fondo beige github.jpg")
+        url("../images/fondo durasno.jpg")
         center center /
         cover
         no-repeat;
@@ -2257,7 +2257,7 @@ flex-shrink: 0;
 
 /* =========================================================
    AÑO
-   2026
+   2027
 ========================================================= */
 
 .year {
@@ -2349,7 +2349,7 @@ flex-shrink: 0;
 
 /* =========================================================
    HORARIO
-   11:00 AM / 6:00 PM
+   07:00 PM / 08:00 PM
 ========================================================= */
 
 .date-details span {
@@ -2493,7 +2493,7 @@ flex-shrink: 0;
             rgba(10, 8, 5, 0),
             rgba(10, 8, 5, 0)
         ),
-        url('../images/fondo con inicial.jpg')
+        url('../images/fondo uva.jpg')
         var(--family-bg-x)
         var(--family-bg-y) /
         cover no-repeat;
@@ -2916,7 +2916,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo con inicial.jpg')
+        url('../images/fondo uva.jpg')
         center center /
         cover no-repeat;
 }
@@ -2933,7 +2933,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo con inicial.jpg')
+        url('../images/fondo uva.jpg')
         center center /
         cover no-repeat;
 }
@@ -3263,7 +3263,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo dorado.jpg')
         center center / cover no-repeat;
 }
 
@@ -3963,7 +3963,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo durasno.jpg')
         center center /
         cover no-repeat;
 
@@ -4195,7 +4195,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo dorado.jpg')
         center center / cover no-repeat;
 }
 
@@ -4558,7 +4558,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo durasno.jpg')
         center center / cover no-repeat;
 }
 
@@ -4706,7 +4706,7 @@ text-transform: uppercase;
 }
 
 
-/* 3 — NOHEMI */
+/* 3 — Emma Vanessa */
 
 .pass-section .pass-card .pass-name {
     transform:
@@ -4831,7 +4831,7 @@ text-transform: uppercase;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/vino liso.jpg')
+        url('../images/fondo uva.jpg')
         center center / cover no-repeat;
  
     padding-bottom: var(--rsvp-bottom-padding);
