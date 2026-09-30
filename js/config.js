@@ -5,10 +5,10 @@ const invitation = {
     },
 
     event: {
-        date: "2027-02-06T18:00:00",
+        date: "2027-02-06T19:00:00",
         displayDate: "06 de febrero de 2027",
-        ceremonyTime: "07:00 PM",
-        receptionTime: "08:00 PM"
+        ceremonyTime: "7:00 PM",
+        receptionTime: "8:00 PM"
     },
 
     family: {
@@ -28,7 +28,7 @@ const invitation = {
         maps: "https://maps.app.goo.gl/1sqdkLtduQHUvZk4A"
     },
 
-    dressCode: "Formal De Noche",
+    dressCode: "Formal de noche",
 
     hotels: {
     title: "Sugerencia de hotel",
@@ -72,7 +72,7 @@ const invitation = {
     ===================================================== */
 
     message:
-        "Hola, quiero confirmar mi asistencia a los XV años de Emma Vanessa."
+        "Hola, quiero confirmar mi asistencia a los XV años de Emmita."
 
 },
 
