@@ -14,8 +14,8 @@ const invitation = {
     family: {
         father: "Emerzon Jonguitud Hernández",
         mother: "Perla Yeyectzy Acosta Martínez",
-        godfather: "Mauricio Aldair Ramírez Luis",
-        godmother: "Cohinda Rodríguez Rojas"
+        godfather: "Juan Jesús Argüelles Robles",
+        godmother: "Citlali Acosta Martínez"
     },
 
     ceremony: {
