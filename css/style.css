@@ -452,7 +452,7 @@
 --event-title-color: var(--c-cream);
 --event-title-font: 'Cormorant Garamond', serif;
 --event-title-x: 0px;
---event-title-y: 0px;
+--event-title-y: 5px;
 /* =========================================================
    HORA DEL EVENTO
 ========================================================= */
