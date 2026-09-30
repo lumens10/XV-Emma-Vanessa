@@ -452,7 +452,7 @@
 --event-title-color: var(--c-cream);
 --event-title-font: 'Cormorant Garamond', serif;
 --event-title-x: 0px;
---event-title-y: 5px;
+--event-title-y: 0px;
 /* =========================================================
    HORA DEL EVENTO
 ========================================================= */
@@ -471,7 +471,7 @@
 --gold-button-size: 9px;
 --gold-button-weight: 500;
 --gold-button-letter-spacing: 3px;
---gold-button-color: inherit;
+--gold-button-color: var(--c-gold);
 --gold-button-border-color: var(--c-gold);
 --gold-button-bg: transparent;
 --gold-button-x: 0px;
