@@ -992,7 +992,7 @@
 /* =========================================================
    FONDO DEL BLOQUE
 ========================================================= */
---hotels-background-image: url('../images/fondo uva.jpg');
+--hotels-background-image: url("../images/fondo uva.jpg");
 --hotels-background-size: cover;
 --hotels-background-position: center center;
 --hotels-background-repeat: no-repeat;
@@ -5491,13 +5491,10 @@ cursor: pointer;
     margin-bottom:
         var(--hotels-space-bottom);
 
-    transform:
-        translate(
-            var(--hotels-position-x),
-            var(--hotels-position-y)
-        );
+    position: relative;
 
-    /* FONDO */
+    overflow: hidden;
+
     background-image:
         var(--hotels-background-image);
 
@@ -5510,9 +5507,11 @@ cursor: pointer;
     background-repeat:
         var(--hotels-background-repeat);
 
-    position: relative;
-
-    overflow: hidden;
+    transform:
+        translate(
+            var(--hotels-position-x),
+            var(--hotels-position-y)
+        );
 }
 
 
@@ -5526,7 +5525,10 @@ cursor: pointer;
 
     position: absolute;
 
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
     background:
         var(--hotels-background-overlay);
@@ -5547,7 +5549,6 @@ cursor: pointer;
 
     z-index: 1;
 }
-
 
 /* =========================================================
    ETIQUETA
