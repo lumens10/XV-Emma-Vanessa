@@ -977,7 +977,7 @@
     --music-y: 0px;
 
  
- /* =========================================================
+/* =========================================================
    HOTELES
 ========================================================= */
 /* ESPACIO DEL BLOQUE */
@@ -989,26 +989,57 @@
 /* ANCHO Y ESPACIO LATERAL */
 --hotels-width: 100%;
 --hotels-padding-x: 20px;
-/* TIPOGRAFÍA */
+/* =========================================================
+   FONDO DEL BLOQUE
+========================================================= */
+--hotels-background-image: url("images/fondo uva.jpg");
+--hotels-background-size: cover;
+--hotels-background-position: center center;
+--hotels-background-repeat: no-repeat;
+/* OSCURECIMIENTO DEL FONDO */
+--hotels-background-overlay: rgba(0, 0, 0, 0.25);
+/* =========================================================
+   TIPOGRAFÍA
+========================================================= */
+/* ETIQUETA */
 --hotels-label-size: 12px;
---hotels-title-size: 42px;
+--hotels-label-weight: 400;
+--hotels-label-letter-spacing: 2px;
+--hotels-label-line-height: 1.2;
+/* DESCRIPCIÓN */
 --hotels-description-size: 16px;
+--hotels-description-weight: 400;
+--hotels-description-line-height: 1.6;
+/* NOMBRE DE LOS HOTELES */
 --hotel-name-size: 24px;
-/* COLORES */
+--hotel-name-weight: 400;
+--hotel-name-letter-spacing: 0px;
+--hotel-name-line-height: 1.2;
+/* =========================================================
+   COLORES
+========================================================= */
 --hotels-label-color: #c9a45c;
---hotels-title-color: #f7f2e9;
---hotels-description-color: rgba(247, 242, 233, .75);
---hotel-name-color: #f7f2e9;
-/* ESPACIOS INTERNOS */
+--hotels-description-color:
+    rgba(247, 242, 233, .75);
+--hotel-name-color:
+    #f7f2e9;
+/* =========================================================
+   ESPACIOS INTERNOS
+========================================================= */
 --hotels-title-space-top: 20px;
 --hotels-description-space-top: 15px;
 --hotels-list-space-top: 45px;
 --hotels-gap: 40px;
 --hotel-button-space-top: 20px;
-/* BOTONES */
+/* =========================================================
+   BOTONES
+========================================================= */
 --hotel-button-padding-y: 12px;
 --hotel-button-padding-x: 25px;
 --hotel-button-font-size: 13px;
+--hotel-button-font-weight: 400;
+--hotel-button-letter-spacing: 1px;
+--hotel-button-radius: 30px;
 /* =========================================================
    ANIMACIÓN
 ========================================================= */
@@ -1020,6 +1051,8 @@
 --hotel1-button-delay: 0.70s;
 --hotel2-delay: 0.70s;
 --hotel2-button-delay: 0.90s;
+
+
  
 /* =========================================================
    FOOTER — PANEL DE CONTROL
@@ -5441,20 +5474,78 @@ cursor: pointer;
 ========================================================= */
 
 .hotels-section {
+
     color: var(--text-dark);
+
     width: var(--hotels-width);
 
-    padding-left: var(--hotels-padding-x);
-    padding-right: var(--hotels-padding-x);
+    padding-left:
+        var(--hotels-padding-x);
 
-    margin-top: var(--hotels-space-top);
-    margin-bottom: var(--hotels-space-bottom);
+    padding-right:
+        var(--hotels-padding-x);
+
+    margin-top:
+        var(--hotels-space-top);
+
+    margin-bottom:
+        var(--hotels-space-bottom);
 
     transform:
         translate(
             var(--hotels-position-x),
             var(--hotels-position-y)
         );
+
+    /* FONDO */
+    background-image:
+        var(--hotels-background-image);
+
+    background-size:
+        var(--hotels-background-size);
+
+    background-position:
+        var(--hotels-background-position);
+
+    background-repeat:
+        var(--hotels-background-repeat);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CAPA OSCURA DEL FONDO
+========================================================= */
+
+.hotels-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        var(--hotels-background-overlay);
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENIDO DEL BLOQUE
+========================================================= */
+
+.hotels-section > * {
+
+    position: relative;
+
+    z-index: 1;
 }
 
 
@@ -5464,23 +5555,40 @@ cursor: pointer;
 
 .hotels-section .section-label {
 
-    color: var(--hotels-label-color);
+    color:
+        var(--hotels-label-color);
 
     font-size:
         var(--hotels-label-size);
+
+    font-weight:
+        var(--hotels-label-weight);
+
+    letter-spacing:
+        var(--hotels-label-letter-spacing);
+
+    line-height:
+        var(--hotels-label-line-height);
 }
 
 
 /* =========================================================
-   TÍTULO / DESCRIPCIÓN
+   DESCRIPCIÓN
 ========================================================= */
 
 .hotels-section p {
 
-    color: var(--hotels-description-color);
+    color:
+        var(--hotels-description-color);
 
     font-size:
         var(--hotels-description-size);
+
+    font-weight:
+        var(--hotels-description-weight);
+
+    line-height:
+        var(--hotels-description-line-height);
 
     margin-top:
         var(--hotels-description-space-top);
@@ -5517,6 +5625,15 @@ cursor: pointer;
     font-size:
         var(--hotel-name-size);
 
+    font-weight:
+        var(--hotel-name-weight);
+
+    letter-spacing:
+        var(--hotel-name-letter-spacing);
+
+    line-height:
+        var(--hotel-name-line-height);
+
     margin: 0;
 }
 
@@ -5536,6 +5653,15 @@ cursor: pointer;
 
     font-size:
         var(--hotel-button-font-size);
+
+    font-weight:
+        var(--hotel-button-font-weight);
+
+    letter-spacing:
+        var(--hotel-button-letter-spacing);
+
+    border-radius:
+        var(--hotel-button-radius);
 }
 /* =========================================================
    HOTELES — ANIMACIÓN DEL BLOQUE
