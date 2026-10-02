@@ -5526,7 +5526,7 @@ cursor: pointer;
         var(--hotels-label-color);
 
     font-size:
-        var(--hotels-label-size);
+        'Cormorant Garamond', serif;
 
     font-weight:
         var(--hotels-label-weight);
