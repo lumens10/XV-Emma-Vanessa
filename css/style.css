@@ -5441,15 +5441,6 @@ cursor: pointer;
 ========================================================= */
 
 .hotels-section {
-background:
-        linear-gradient(
-            rgba(5, 4, 3, 0),
-            rgba(5, 4, 3, 0)
-        ),
-        url('../images/fondo uva.jpg')
-        center center /
-        cover no-repeat;
-
     color: var(--text-dark);
     width: var(--hotels-width);
 
