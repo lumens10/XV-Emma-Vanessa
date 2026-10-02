@@ -997,7 +997,7 @@
 --hotels-background-position: center center;
 --hotels-background-repeat: no-repeat;
 /* OSCURECIMIENTO DEL FONDO */
---hotels-background-overlay: rgba(0, 0, 0, 0.25);
+--hotels-background-overlay: rgba(0, 0, 0, 0.0);
 /* =========================================================
    TIPOGRAFÍA
 ========================================================= */
