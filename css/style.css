@@ -5477,7 +5477,13 @@ cursor: pointer;
 
     color: var(--text-dark);
 
-    width: var(--hotels-width);
+    width: 100%;
+
+    padding-top:
+        var(--hotels-space-top);
+
+    padding-bottom:
+        var(--hotels-space-bottom);
 
     padding-left:
         var(--hotels-padding-x);
@@ -5485,11 +5491,7 @@ cursor: pointer;
     padding-right:
         var(--hotels-padding-x);
 
-    margin-top:
-        var(--hotels-space-top);
-
-    margin-bottom:
-        var(--hotels-space-bottom);
+    margin: 0;
 
     position: relative;
 
@@ -5512,42 +5514,6 @@ cursor: pointer;
             var(--hotels-position-x),
             var(--hotels-position-y)
         );
-}
-
-
-/* =========================================================
-   CAPA OSCURA DEL FONDO
-========================================================= */
-
-.hotels-section::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background:
-        var(--hotels-background-overlay);
-
-    z-index: 0;
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   CONTENIDO DEL BLOQUE
-========================================================= */
-
-.hotels-section > * {
-
-    position: relative;
-
-    z-index: 1;
 }
 
 /* =========================================================
