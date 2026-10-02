@@ -992,7 +992,7 @@
 /* =========================================================
    FONDO DEL BLOQUE
 ========================================================= */
---hotels-background-image: url("..images/fondo uva.jpg");
+--hotels-background-image: url('../images/fondo uva.jpg');
 --hotels-background-size: cover;
 --hotels-background-position: center center;
 --hotels-background-repeat: no-repeat;
