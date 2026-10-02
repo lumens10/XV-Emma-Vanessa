@@ -1087,7 +1087,7 @@
 /* Espacio inferior */
 --footer-ornament-margin-bottom: 0px;
 /* =========================================================
-   TÍTULO — NOHEMI
+   TÍTULO — Emma Vanessa
 ========================================================= */
 /* Tamaño */
 --footer-title-size: 80px;
@@ -1104,7 +1104,7 @@
 --footer-title-margin-top: 0px;
 --footer-title-margin-bottom: 0px;
 /* =========================================================
-   TEXTO — MIS XV · 2026
+   TEXTO — MIS XV · 2027
 ========================================================= */
 /* Tamaño */
 --footer-text-size: 10px;
@@ -5826,7 +5826,7 @@ cursor: pointer;
 
     background-repeat: no-repeat;
 
-    background-color: #050504;
+    background-color: red;
 
     color: var(--c-cream);
 
@@ -5868,7 +5868,7 @@ cursor: pointer;
 
 
 /* =========================================================
-   TÍTULO — NOHEMI
+   TÍTULO — Emma Vanessa
 ========================================================= */
 
 .footer h2 {
