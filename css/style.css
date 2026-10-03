@@ -992,7 +992,7 @@
 /* =========================================================
    FONDO DEL BLOQUE
 ========================================================= */
---hotels-background-image: url("../images/fondo uva.jpg");
+--hotels-background-image: url("../images/Fondo 1.jpg");
 --hotels-background-size: cover;
 --hotels-background-position: center center;
 --hotels-background-repeat: no-repeat;
@@ -1061,7 +1061,7 @@
    FONDO
 ========================================================= */
 /* Imagen de fondo */
---footer-bg-image: url('../images/fondo uva.jpg');
+--footer-bg-image: url('../images/Fondo 1.jpg');
 /* Posición de la imagen de fondo */
 --footer-bg-x: 50%;
 --footer-bg-y: 50%;
@@ -1679,7 +1679,7 @@ text-transform: uppercase;
             rgba(10, 8, 5, 0),
             rgba(10, 8, 5, 0)
         ),
-        url('../images/fondo uva.jpg')
+        url('../images/Fondo 1.jpg')
         var(--hero-bg-x)
         var(--hero-bg-y) /
         cover no-repeat;
@@ -2167,7 +2167,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/fondo uva.jpg")
+        url("../images/Fondo 1.jpg")
         var(--count-bg-x) var(--count-bg-y) / cover no-repeat;
 
     padding: var(--count-section-padding);
@@ -2610,7 +2610,7 @@ flex-shrink: 0;
             rgba(10, 8, 5, 0),
             rgba(10, 8, 5, 0)
         ),
-        url('../images/fondo uva.jpg')
+        url('../images/Fondo 1.jpg')
         var(--family-bg-x)
         var(--family-bg-y) /
         cover no-repeat;
@@ -3033,7 +3033,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo uva.jpg')
+        url('../images/Fondo 1.jpg')
         center center /
         cover no-repeat;
 }
@@ -3050,7 +3050,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo uva.jpg')
+        url('../images/Fondo 1.jpg')
         center center /
         cover no-repeat;
 }
@@ -5126,7 +5126,7 @@ text-transform: uppercase;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/fondo uva.jpg')
+        url('../images/Fondo 1.jpg')
         center center / cover no-repeat;
  
     padding-bottom: var(--rsvp-bottom-padding);
