@@ -699,7 +699,7 @@ function createCompanionFields() {
 
 
         input.placeholder =
-            "Nombre y apellido";
+            "Nombre";
 
 
         input.id =
