@@ -4690,7 +4690,7 @@ margin: auto;
     padding: var(--pass-card-padding);
 text-align: center;
 
-    color: var(--text-dark);
+    color: #7f2855;
 
     background:
         linear-gradient(
