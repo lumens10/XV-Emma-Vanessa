@@ -2141,14 +2141,8 @@ font-size: var(--section-text-size);
         url("../images/Fondo 3.jpg")
         center center / cover no-repeat;
 }
-.intro .ornament {
-    margin: var(--intro-ornament-margin);
-    font-size: var(--intro-ornament-size);
-    color: var(--intro-ornament-color);
-    line-height: 1;
-    translate: var(--intro-ornament-x) var(--intro-ornament-y);
-}
-.intro ornament img {
+
+.intro .ornament img {
 
     display: block;
 
