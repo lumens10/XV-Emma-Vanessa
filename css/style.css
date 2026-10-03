@@ -2142,15 +2142,19 @@ font-size: var(--section-text-size);
         center center / cover no-repeat;
 }
 
+.intro ornament img {
 
-.intro .ornament {
-    margin: var(--intro-ornament-margin);
-    font-size: var(--intro-ornament-size);
-    color: var(--intro-ornament-color);
-    line-height: 1;
-    translate: var(--intro-ornament-x) var(--intro-ornament-y);
+    display: block;
+
+    width: var(--intro-ornament-width);
+
+    height: auto;
+
+    margin: 0 auto;
+
+    transform:
+        translateY(var(--intro-ornament-position-y));
 }
-
 
 /* =========================================================
    CUENTA REGRESIVA
