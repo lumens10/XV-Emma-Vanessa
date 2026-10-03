@@ -836,7 +836,7 @@
     --pass-title-margin: clamp(22px,7vw,30px) 0 5px;
     --pass-title-size: 75px;
     --pass-title-weight: 300;
-    --pass-title-color: var(--c-text-dark);
+    --pass-title-color: #7f2855;
     --pass-title-font: 'Cormorant Garamond', serif;
     --pass-name-size: 35px;
     --pass-name-weight: 400;
@@ -849,11 +849,11 @@
     --pass-text-size: 21px;
     --pass-text-weight: 300;
     --pass-text-letter-spacing: 2px;
-    --pass-text-color: var(--c-text-dark);
+    --pass-text-color: #7f2855;
     --pass-number-margin: clamp(7px,2.5vw,10px);
     --pass-number-size: 60px;
     --pass-number-weight: 400;
-    --pass-number-color: var(--c-text-dark);
+    --pass-number-color: #7f2855;
     --pass-number-font: 'Cormorant Garamond', serif;
 /* =========================================================
    ANIMACIÓN INDIVIDUAL — PASE DE INVITACIÓN
