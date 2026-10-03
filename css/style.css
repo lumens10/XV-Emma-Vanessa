@@ -2138,7 +2138,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/fondo durasno.jpg")
+        url("../images/Fondo 3.jpg")
         center center / cover no-repeat;
 }
 
@@ -2295,7 +2295,7 @@ flex-shrink: 0;
     padding: var(--section-padding);
 
     background:
-        url("../images/fondo durasno.jpg")
+        url("../images/Fondo 2.jpg")
         center center /
         cover
         no-repeat;
@@ -3827,7 +3827,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo durasno.jpg')
+        url('../images/Fondo 3.jpg')
         center center /
         cover no-repeat;
 
@@ -4080,7 +4080,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo durasno.jpg')
+        url('../images/Fondo 3.jpg')
         center center /
         cover no-repeat;
 
@@ -4675,7 +4675,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/fondo durasno.jpg')
+        url('../images/Fondo 3.jpg')
         center center / cover no-repeat;
 }
 
