@@ -129,9 +129,9 @@
     /* ===== INTRO ===== */
     --intro-bg-x: 50%;
     --intro-bg-y: 50%;
-    --intro-ornament-margin: 35px 0;
+    --intro-ornament-width: 120px;
+    --intro-ornament-margin: 0 auto;
     --intro-ornament-size: inherit;
-    --intro-ornament-color: #7f2855;
     --intro-ornament-x: 0px;
     --intro-ornament-y: 0px;
     --intro-title-size: clamp(45px,10vw,80px);
