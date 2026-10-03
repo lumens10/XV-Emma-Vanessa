@@ -129,8 +129,8 @@
     /* ===== INTRO ===== */
     --intro-bg-x: 50%;
     --intro-bg-y: 50%;
-    --intro-ornament-width: 120px;
-    --intro-ornament-margin: 0 auto;
+    --intro-ornament-width: 50px;
+    --intro-ornament-margin-bottom: 0px;
     --intro-ornament-size: inherit;
     --intro-ornament-x: 0px;
     --intro-ornament-y: 0px;
