@@ -1035,6 +1035,7 @@
 --hotel-button-font-size: 13px;
 --hotel-button-font-weight: 400;
 --hotel-button-letter-spacing: 1px;
+--hotel-button-color: #f7f2e9;
 --hotel-button-radius: 30px;
 /* =========================================================
    ANIMACIÓN
@@ -5602,6 +5603,9 @@ cursor: pointer;
 
     margin-top:
         var(--hotel-button-space-top);
+
+    color:
+        var(--hotel-button-color);
 
     padding:
         var(--hotel-button-padding-y)
