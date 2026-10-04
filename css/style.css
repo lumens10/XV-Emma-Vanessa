@@ -638,16 +638,11 @@
 --dress-title-margin: 20px auto 30px;
 --dress-title-x: 0px;
 --dress-title-y: 0px;
-/* --- Texto --- */
---dress-text-color: #7f2855;
---dress-text-font: 'Montserrat', sans-serif;
---dress-text-size: 14px;
---dress-text-weight: 300;
---dress-text-line-height: 1.9;
---dress-text-letter-spacing: 0px;
---dress-text-margin: 20px auto;
---dress-text-x: 0px;
---dress-text-y: 0px;
+/* --- ornamen png --- */
+--dress-ornament-width: 120px;
+--dress-ornament-margin: 0 auto;
+--dress-ornament-x: 0px;
+--dress-ornament-y: 0px;
 /* =========================================================
    ANIMACIÓN INDIVIDUAL — VESTIMENTA
 ========================================================= */
