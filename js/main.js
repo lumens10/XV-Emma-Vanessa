@@ -160,8 +160,8 @@ const receptionHeading =
 if (receptionHeading) {
     receptionHeading.innerHTML =
         receptionName.replace(
-            "Casa Nava",
-            "Casa Nava"
+            " Casa",
+            "<br>Casa"
         );
 }
 
