@@ -658,7 +658,7 @@
 /* FORMAL */
 --dress-title-delay: .80s;
 /* TEXTO */
---dress-text-delay: 1.15s;
+--dress-ornament-delay: 1.15s;
 /* =========================================================
    POSICIÓN INICIAL DE LA ANIMACIÓN
 ========================================================= */
@@ -672,8 +672,8 @@
 --dress-title-from-x: 0px;
 --dress-title-from-y: 40px;
 /* TEXTO */
---dress-text-from-x: 0px;
---dress-text-from-y: 35px;
+--dress-ornament-from-x: 0px;
+--dress-ornament-from-y: 35px;
  
  
    /* ===== SOBRES ===== */
