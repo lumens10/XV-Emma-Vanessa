@@ -1006,10 +1006,10 @@
 --hotels-description-weight: 400;
 --hotels-description-line-height: 1.6;
 /* NOMBRE DE LOS HOTELES */
---hotel-name-size: 64px;
+--hotel-name-size: 50px;
 --hotel-name-weight: 400;
 --hotel-name-letter-spacing: 0px;
---hotel-name-line-height: 1.2;
+--hotel-name-line-height: 1;
 --hotel-name-font: 'Cormorant Garamond', serif;
 /* =========================================================
    COLORES
