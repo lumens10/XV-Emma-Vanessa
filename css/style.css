@@ -3921,34 +3921,20 @@ flex-shrink: 0;
 }
 
 
-/* =========================================================
-   TEXTO
-========================================================= */
+.dress-section  .ornament {
 
-.dress-section p {
+    display: block;
 
-    margin: var(--dress-text-margin);
+    width: var(--dress-ornament-width);
 
-    font-family: var(--dress-text-font);
+    height: auto;
 
-    font-size:
-        min(
-            var(--dress-text-size),
-            6vw
-        );
+    margin: 0 auto;
 
-    font-weight: var(--dress-text-weight);
-
-    line-height: var(--dress-text-line-height);
-
-    letter-spacing: var(--dress-text-letter-spacing);
-
-    color: var(--dress-text-color);
-
-    translate:
-        var(--dress-text-x)
-        var(--dress-text-y);
+    transform:
+        translateY(var(--dress-ornament-position-y));
 }
+
 /* =========================================================
    ANIMACIÓN INDIVIDUAL — VESTIMENTA
    CÓDIGO + PNG + FORMAL + TEXTO
