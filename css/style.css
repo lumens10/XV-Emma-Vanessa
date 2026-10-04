@@ -1010,6 +1010,7 @@
 --hotel-name-weight: 400;
 --hotel-name-letter-spacing: 0px;
 --hotel-name-line-height: 1.2;
+--hotel-name-font: 'Cormorant Garamond', serif;
 /* =========================================================
    COLORES
 ========================================================= */
@@ -5573,6 +5574,9 @@ cursor: pointer;
 
     color:
         var(--hotel-name-color);
+
+    font-family:
+        var(--hotel-name-font);
 
     font-size:
         var(--hotel-name-size);
