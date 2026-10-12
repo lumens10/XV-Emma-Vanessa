@@ -697,7 +697,7 @@
 --envelope-title-font: 'Cormorant Garamond', serif;
 --envelope-title-size: clamp(45px,10vw,80px);
 --envelope-title-weight: 300;
---envelope-title-letter-spacing: 20px;
+--envelope-title-letter-spacing: 2px;
 --envelope-title-margin: 20px auto 30px;
 --envelope-title-x: 0px;
 --envelope-title-y: 0px;
