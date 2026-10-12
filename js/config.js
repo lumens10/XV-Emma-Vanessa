@@ -37,12 +37,12 @@ const invitation = {
         "Te compartimos algunas opciones de hoteles cercanos al evento.",
 
     hotel1: {
-        name: "Hotel Posada San Javier",
+        name: "Posada San Javier",
         maps: "https://maps.app.goo.gl/9BVVSxF3g5DiYNG7A"
     },
 
     hotel2: {
-        name: "Hotel Perla Escondida",
+        name: "Perla Escondida",
         maps: "https://maps.app.goo.gl/85Lb1uKWWhpkdGVN9"
     }
 },
