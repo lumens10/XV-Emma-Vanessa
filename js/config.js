@@ -34,7 +34,7 @@ const invitation = {
     title: "Sugerencia de hotel",
 
     description:
-        "Te compartimos algunas opciones de hoteles cercanos al evento.",
+        "Te compartimos algunas opciones cercanas al evento.",
 
     hotel1: {
         name: "Posada San Javier",
